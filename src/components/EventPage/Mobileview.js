@@ -6,12 +6,13 @@ import ClubEvent from "./ClubEvent";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import AppBar from '@material-ui/core/AppBar';
-import HomeHeader from '../HomeHeader/index';
 
 const styles = (theme) => ({
   mobileTab: {
+    border: '1px solid white',
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
   },
   tabRoot: {
   minWidth: '50%',
@@ -67,7 +68,7 @@ class EventDetail extends Component {
     window.scrollTo(0, 0);
   }
   handleChange = (event, active) => {
-    this.setState({ active });
+    this.setState({ active: active });
   }
 
   render() {
@@ -87,10 +88,12 @@ class EventDetail extends Component {
               <Tab
                 label="Department"
                 classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+                onClick={this.departmentShow}
               />
               <Tab
                 label="Club"
                 classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+                onClick={this.clubShow}
               />
             </Tabs>
           </AppBar>

@@ -104,6 +104,15 @@ class Header extends Component {
                   OUR TEAM
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  className="nav-link"
+                  to="/coming_soon"
+                  onClick={this.toggleMenu}
+                >
+                  GUEST TALKS
+                </NavLink>
+              </li>
             </ul>
           </div>
         </nav>

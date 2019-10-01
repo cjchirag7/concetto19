@@ -5,6 +5,9 @@ import Loading from "../Loading";
 import DepartmentEvent from "./DepartmentEvent";
 import ClubEvent from "./ClubEvent";
 import Mobileview from "./Mobileview";
+import HomeHeader from "../HomeHeader";
+import { Link } from "react-router-dom";
+import { Events } from "../../shared/data"
 
 const styles = (theme) => ({
   root: {
@@ -53,12 +56,14 @@ class EventDetail extends Component {
   render() {
     const {classes} = this.props;
     return (
+      <div>
+        <HomeHeader />
       <div className={classes.root}>
         <div
           className={classes.verticalTab}
         >
           <div>
-            <img src="assets/logo.png" className="img-fluid" alt={Loading} />
+            <Link to="home"><img src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png" className="img-fluid" alt={Loading} /></Link>
           </div>
           <div className="btnFlex">
             <button className={"btn btn-event btn-2 " + ((this.state.active === 0) ? 'active-bottom' : '')} onClick={this.departmentShow}>DEPARTMENT</button>
@@ -68,9 +73,10 @@ class EventDetail extends Component {
           <br/>
           <div>
             {this.state.active === 0 && <DepartmentEvent />}
-            {this.state.active === 1 && <ClubEvent />}
+            {this.state.active === 1 && <ClubEvent events={Events}/>}
           </div>
         {window.innerWidth < 960 ? <Mobileview />:''}
+     </div>
      </div>
     );
   }

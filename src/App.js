@@ -3,7 +3,6 @@ import Main from "./components/MainComponent";
 import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { ConfigureStore } from "./redux/store.js";
-import { withAuthenticator } from "aws-amplify-react";
 import Amplify from "aws-amplify";
 import aws_exports from "./aws-exports";
 

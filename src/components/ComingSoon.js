@@ -1,10 +1,10 @@
 import React,{ Component } from 'react';
+import Header from './Header';
 
 class ComingSoon extends Component{
   componentDidMount(){
       document.body.style.overflow='hidden';
       window.scrollTo(0,0);//to fix bug of component not showing
-      console.log('sdfkj');
   }
   componentWillUnmount(){
       document.body.style.overflowY='scroll';
@@ -12,6 +12,7 @@ class ComingSoon extends Component{
    render(){
         return(
         <div>
+            <Header />
             <h1 
             style={{
                 textAlign: 'center',

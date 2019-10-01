@@ -75,7 +75,7 @@ state={
           }}
         >
           <div>
-            <img src="assets/logo.png" className="img-fluid" alt={Loading} />
+            <a href="home"><img src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png" className="img-fluid" alt={Loading} /></a>
           </div>
           <div className="btnFlex">
             <button className={"btn btn-event btn-2 "+((this.state.active==='about')?'active-bottom':'')} onClick={this.aboutShow}>ABOUT</button>

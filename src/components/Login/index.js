@@ -18,6 +18,7 @@ class Login extends Component {
     this.bounceLeft = this.bounceLeft.bind(this);
     this.bounceRight = this.bounceRight.bind(this);
     this.handleRegisterSubmit = this.handleRegisterSubmit.bind(this);
+    window.scrollTo(0,0);
   }
 
   componentDidMount() {
