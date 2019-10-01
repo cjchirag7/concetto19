@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"concetto196babcaae": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

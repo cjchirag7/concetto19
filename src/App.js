@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Main from "./components/MainComponent";
+import { HashRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import { ConfigureStore } from "./redux/store.js";
+import { withAuthenticator } from "aws-amplify-react";
+import Amplify from "aws-amplify";
+import aws_exports from "./aws-exports";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.css";
+import "./App.css";
+Amplify.configure(aws_exports);
+
+const store = ConfigureStore();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
+      <HashRouter basename="/">
+        {
+          // to be replaced by BrowserRouter
+        }
+        <div className="App">
+          <Main />
+        </div>
+      </HashRouter>
+    </Provider>
   );
 }
 
