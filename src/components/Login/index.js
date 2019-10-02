@@ -4,6 +4,7 @@ import Header from "../Header";
 import Loading from "../Loading";
 import PropTypes from "prop-types";
 import "./styles.css";
+import ComingSoon from "../ComingSoon";
 
 class Login extends Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Login extends Component {
     this.bounceLeft = this.bounceLeft.bind(this);
     this.bounceRight = this.bounceRight.bind(this);
     this.handleRegisterSubmit = this.handleRegisterSubmit.bind(this);
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   componentDidMount() {
@@ -60,6 +61,7 @@ class Login extends Component {
 
   render() {
     const { isError, error_message } = this.state;
+    if (window.innerWidth < 1100) return <ComingSoon />;
     return (
       <div>
         <Header />
