@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
+import { CoreTeam } from "../../shared/CoreTeam";
+import { DeveloperTeam } from "../../shared/DeveloperTeam";
 import "./styles.css";
 
 class OurTeam extends Component {
@@ -10,7 +12,7 @@ class OurTeam extends Component {
     };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     window.scrollTo(0, 0);
   }
 
@@ -31,7 +33,7 @@ class OurTeam extends Component {
               {" "}
               CORE TEAM{" "}
             </a>
-            | <a href="#"> DEVELOPERS</a>{" "}
+            | <a href="#developers"> DEVELOPERS</a>{" "}
           </h2>
         ) : (
           <h2 align="center">
@@ -47,197 +49,64 @@ class OurTeam extends Component {
         )}
         <br />
         <div class="container team">
-          <div class="row  mt-2">
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
+          <div class="row  mt-2 mb-2">
+            {CoreTeam.map(person => (
+              <div class="col-sm-6 col-lg-3 my-auto" id={person.name}>
+                <div class="box shadow-sm p-4">
+                  <div class="image-wrapper mb-3">
+                    <img class="img-fluid" src={person.pic} alt={"Loading.."} />
+                  </div>
+                  <div class="box-desc">
+                    <h5>{person.name}</h5>
+                    <p>{person.post}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-          <div class="row mt-4">
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
+          <div class="row mt-4" id="developers">
+            {DeveloperTeam.map(person => (
+              <div class="col-sm-6 col-lg-3 my-auto" id={person.name}>
+                <div class="box shadow-sm p-4">
+                  <div class="image-wrapper mb-3">
+                    <img class="img-fluid" src={person.pic} alt="Loading..." />
+                  </div>
+                  <div class="box-desc">
+                    <h5>{person.name}</h5>
+                    <p>{person.post}</p>
+                  </div>
+                  <ul class="social">
+                    <li>
+                      <a
+                        href={person.fb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href={person.git}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa fa-linkedin "></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
               </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 my-auto">
-              <div class="box shadow-sm p-4">
-                <div class="image-wrapper mb-3">
-                  <img
-                    class="img-fluid"
-                    src="https://images.pexels.com/photos/555790/pexels-photo-555790.png"
-                    alt="..."
-                  />
-                </div>
-                <div class="box-desc">
-                  <h5>Jon Doe</h5>
-                  <p>FrontEnd Developer</p>
-                </div>
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-linkedin "></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

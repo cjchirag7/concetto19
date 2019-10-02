@@ -60,21 +60,19 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
-    this.setState({ x: window.scrollY });
+    // this.setState({ x: window.scrollY });
     window.addEventListener("scroll", this.handleScroll);
-    if (window.innerWidth > 600) {
-      window.addEventListener("scroll", this.handleScroll1);
-    }
   }
   componentWillUnmount() {
     // this.props.makeShowLogo();
     window.removeEventListener("scroll", this.handleScroll);
-    window.removeEventListener("scroll", this.handleScroll1);
   }
 
   handleScroll = event => {
     let scrollTop = window.pageYOffset;
     const { offset, header } = this.state;
+    if(window.innerWidth > 800)
+    this.setState({ x: window.scrollY });
     if (scrollTop > window.innerHeight / 10) {
       if (!header) {
         this.setState({
@@ -106,9 +104,9 @@ class Home extends Component {
     }
   };
 
-  handleScroll1 = event => {
-    this.setState({ x: window.scrollY });
-  };
+  // handleScroll1 = event => {
+  //   this.setState({ x: window.scrollY });
+  // };
 
   scrollDown() {
     window.scrollTo(0, window.innerHeight);
@@ -119,7 +117,7 @@ class Home extends Component {
     const { offset, x } = this.state;
     return (
       <div>
-        <section id="scroll_down" class="demo">
+        <section id="scroll_down" className="demo">
           <a
             onClick={() => {
               this.scrollDown();
@@ -158,11 +156,11 @@ class Home extends Component {
         }
         <div className={classes.parallax}>
           {HomeContent.map((content, id) => {
-            if (id % 2==0)
+            if (id % 2===0)
               return (
                 <Parallax
                   x={x}
-                  id={id.toString()}
+                  key={id.toString()}
                   content={content}
                 />
               );
@@ -170,7 +168,7 @@ class Home extends Component {
               return window.innerWidth > 800 ? (
                 <Parallax2
                   x={x}
-                  id={id.toString()}
+                  key={id.toString()}
                   content={content}
                 />
               ) : (

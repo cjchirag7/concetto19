@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ComingSoon from "../ComingSoon";
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
@@ -62,7 +63,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/workshops"
+                  to="/coming_soon"
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS
@@ -71,10 +72,10 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/highlights"
+                  to="/coming_soon"
                   onClick={this.toggleMenu}
                 >
-                  HIGHLIGHTS
+                  EXHIBITION
                 </NavLink>
               </li>
               <li>
@@ -86,15 +87,15 @@ class Header extends Component {
                   LOGIN
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   className="nav-link"
-                  to="/home"
+                  to="/coming_soon"
                   onClick={this.toggleMenu}
                 >
                   CAP
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   className="nav-link"

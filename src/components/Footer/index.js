@@ -35,8 +35,8 @@ const styles = theme => ({
     },
     [theme.breakpoints.down("sm")]: {
       margin: "10px",
-      marginBottom: "6px",
-    },
+      marginBottom: "6px"
+    }
   },
   facebook: {
     color: "#0018ff"
@@ -65,7 +65,10 @@ class Footer extends React.Component {
         >
           <FontAwesomeIcon icon={faInstagram} className={classes.instagram} />
         </a>
-        <a href="" className={classes.a}>
+        <a
+          href="https://www.youtube.com/watch?v=2FWZDc_e4so&t=1s"
+          className={classes.a}
+        >
           <FontAwesomeIcon icon={faYoutube} className={classes.youtube} />
         </a>
       </div>

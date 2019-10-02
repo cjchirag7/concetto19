@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Details extends Component {
   render() {
-    return (
-      <div>Details page</div>
-    )
+    const { event } = this.props;
+    return <div className="container" style={{ display: "block", width: "80vw" }}>
+    {event.description}
+    </div>;
   }
 }
 

@@ -57,7 +57,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/workshops"
+                  to="/coming_soon"
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS
@@ -66,10 +66,10 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/highlights"
+                  to="/coming_soon"
                   onClick={this.toggleMenu}
                 >
-                  HIGHLIGHTS
+                  EXHIBITION
                 </NavLink>
               </li>
               <li>
@@ -84,19 +84,28 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/home"
-                  onClick={this.toggleMenu}
-                >
-                  CAP
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className="nav-link"
                   to="/our_team"
                   onClick={this.toggleMenu}
                 >
                   OUR TEAM
+                </NavLink>
+              </li>
+              {/* <li>
+                <NavLink
+                  className="nav-link"
+                  to="/coming_soon"
+                  onClick={this.toggleMenu}
+                >
+                  CAP
+                </NavLink>
+              </li> */}
+              <li>
+                <NavLink
+                  className="nav-link"
+                  to="/coming_soon"
+                  onClick={this.toggleMenu}
+                >
+                  GUEST TALKS
                 </NavLink>
               </li>
             </ul>
