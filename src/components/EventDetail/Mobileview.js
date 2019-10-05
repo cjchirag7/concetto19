@@ -52,7 +52,18 @@ class Mobileview extends Component {
             </div>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <Typography>{event.description}</Typography>
+            <Typography>
+              {event.description}
+              <br />
+              <br />
+              For any queries, feel free to contact :
+              <br />
+              <ul>
+                {event.admins.map((admin, id) => (
+                  <li key={id.toString()}>{admin}</li>
+                ))}
+              </ul>
+            </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
         <ExpansionPanel square>

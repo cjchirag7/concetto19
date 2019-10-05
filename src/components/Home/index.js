@@ -65,6 +65,7 @@ class Home extends Component {
   }
   componentWillUnmount() {
     // this.props.makeShowLogo();
+    window.scrollTo(0,0);
     window.removeEventListener("scroll", this.handleScroll);
   }
 

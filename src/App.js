@@ -20,7 +20,7 @@ function App() {
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />
-      <BrowserRouter basename="/">
+      <BrowserRouter>
         {
           // to be replaced by BrowserRouter
         }

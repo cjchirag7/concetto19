@@ -171,6 +171,8 @@ class Parallax extends React.Component {
 }
 
 Parallax.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  content: PropTypes.object.isRequired,
+  x: PropTypes.number.isRequired
 };
 export default withStyles(styles)(Parallax);

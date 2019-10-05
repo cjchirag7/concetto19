@@ -20,7 +20,14 @@ class Header extends Component {
   render() {
     const { isMenuOpen } = this.state;
     return (
-      <div className="header fixed-top">
+      <div
+        className="header fixed-top"
+        style={
+          window.innerWidth < 800
+            ? { backgroundColor: "rgba(0, 0, 0, 0.5)" }
+            : null
+        }
+      >
         <nav className="navbar navbar-expand-md navbar-dark">
           <a className="navbar-brand" href="home">
             <span className="helper"></span>
@@ -57,7 +64,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/workshops"
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ComingSoon from "../ComingSoon";
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
@@ -11,17 +10,16 @@ class Header extends Component {
     this.toggleMenu = this.toggleMenu.bind(this);
   }
   toggleMenu() {
-    let scrollTop = window.pageYOffset;
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
-    if (!isMenuOpen)
-      window.scrollTo(0, scrollTop + window.innerHeight / 10 + 1);
-    else window.scrollTo(0, scrollTop - window.innerHeight / 10 - 1);
   }
   render() {
     const { isMenuOpen } = this.state;
     return (
-      <div className="header fixed-top">
+      <div
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        className="header fixed-top"
+      >
         <nav className="navbar navbar-expand-md navbar-dark">
           <a className="navbar-brand" href="home">
             <span className="helper"></span>
@@ -63,7 +61,7 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/coming_soon"
+                  to="/workshops"
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS
