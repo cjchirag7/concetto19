@@ -49,13 +49,13 @@ export const CoreTeam = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/ShashwatRaj.jpg",
     phone: "7903592830"
   },
-  {
-    name: "Vislavath Shirisha",
-    post: "Exhibition Coordinator",
-    pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Sirisha+.jpg",
-    phone: "9493366650"
-  },
+  // {
+  //   name: "Vislavath Shirisha",
+  //   post: "Exhibition Coordinator",
+  //   pic:
+  //     "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Sirisha+.jpg",
+  //   phone: "9493366650"
+  // },
   {
     name: "Sirigireddy Dhana Laxmi",
     post: "Technical Team",
