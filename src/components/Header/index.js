@@ -54,6 +54,15 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
+                  to="/about-theme"
+                  onClick={this.toggleMenu}
+                >
+                  ABOUT THEME
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link"
                   to="/events"
                   onClick={this.toggleMenu}
                 >

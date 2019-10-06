@@ -22,7 +22,7 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Shambhav Goswami - 784494368",
+      "Shambhav Goswami - 7844949368",
       "Srajan Gupta - 8223060677",
       "Shantanu Rawat - 9424697088",
       "Sourav Sahu - 8825268970"
@@ -477,13 +477,14 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Abhishek Raj Parmani - 9079868390",
+      "Abhishek Raj Permani - 9079868390",
       "Swapnil Narayan - 7864024344",
       "Sahil Siyag - 9829102475",
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/z21DDUtvxYVBqkPU6",
+    link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeQPKd_CEO9bTIUW3ARHeFBoE1Lo3KrgAHmymyStG9vReYCIA/viewform",
     pdf:
       "https://drive.google.com/file/d/19vT0rHW8P1pg_nPze0vNkS_SI1jhVzhI/view?usp=sharing"
   },
@@ -871,13 +872,14 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Abhishek Raj Parmani - 9079868390",
+      "Abhishek Raj Permani - 9079868390",
       "Swapnil Narayan - 7864024344",
       "Sahil Siyag - 9829102475",
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/4zSx14sLFHrbmqAm7",
+    link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd7aRhx_PL2_BqxjSN1da_6nxwq61jD_dMa29OJzVSKoZc82Q/viewform",
     pdf:
       "https://drive.google.com/file/d/10jB4rrkn_KIFc3DFsXgDO9GXrUXv7pVZ/view?usp=sharing"
   },

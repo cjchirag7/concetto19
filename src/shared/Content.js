@@ -1,6 +1,6 @@
 export const HomeContent = [
   {
-    link: "home",
+    link: "about-theme",
     heading: "ABOUT US",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/about1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/about2.jpg",
@@ -18,7 +18,7 @@ export const HomeContent = [
     image1:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/exhibition3.jpg",
     description:
-      "This year, for first time in history of Concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works. More will be revealed soon."
+      "This year, for the first time, in history of Concetto, we are proud to announce that we will be having an Engineering Exhibition, where we had invited various colleges and clubs to showcase their best works. More will be revealed soon."
   },
   {
     link: "events",
