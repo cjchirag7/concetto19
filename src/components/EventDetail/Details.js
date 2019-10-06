@@ -8,6 +8,9 @@ class Details extends Component {
         {event.description}
         <br />
         <br />
+        For detailed description, refer the <a href={event.pdf}>document</a>
+        <br />
+        <br />
         For any queries, feel free to contact :
         <br />
         <ul>

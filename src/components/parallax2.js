@@ -53,7 +53,7 @@ const styles = theme => ({
   },
   image3M: {},
   text: {
-    minWidth: "300px",
+    minWidth: "400px",
     marginLeft: "160px",
     marginTop: "50px",
     position: "relative",
@@ -86,10 +86,10 @@ class Parallax extends React.Component {
             }
             style={{ textAlign: "center" }}
           >
-            <Link to={content.link}>
-              <h1>{content.heading}</h1>
+            <Link to={content.link} className={" title"}>
+              <h1 className="title">{content.heading}</h1>
             </Link>
-            {content.description}
+            <p>{content.description}</p>
           </div>
           <div
             ref={this.parent}

@@ -196,7 +196,7 @@ class Main extends Component {
               <EventDetail events={this.props.events} auth={this.props.auth} />
             )}
           /> */}
-          <Route exact path="/login" component={() => <Login />} />
+          {/* <Route exact path="/login" component={() => <Login />} /> */}
           <Route exact path="/our_team" component={() => <OurTeam />} />
           <Route exact path="/coming_soon" component={() => <ComingSoon />} />
           <Route exact path="/workshops" component={() => <Workshops />} />

@@ -35,7 +35,7 @@ const styles = theme => ({
     marginTop: "50px",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "0px",
-      marginTop: "50px",
+      marginTop: "50px"
     }
   }
 });
@@ -139,13 +139,14 @@ class EventDetail extends Component {
               fontWeight: 800,
               textTransform: "capitalize"
             }}
+            className="title"
           >
             {event.name}
           </div>
           <div className={classes.desktopView}>
             {this.state.active === "about" && (
               <About event={this.props.event} />
-              )}
+            )}
             {this.state.active === "rules" && (
               <Rules event={this.props.event} />
             )}

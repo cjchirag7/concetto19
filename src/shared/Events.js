@@ -28,7 +28,8 @@ export const Events = [
       "Sourav Sahu - 8825268970"
     ],
     club: "ROBOISM",
-    link: "https://forms.gle/vdzkN5AgbPp8TEk77"
+    link: "https://forms.gle/vdzkN5AgbPp8TEk77",
+    pdf: "https://drive.google.com/open?id=11XvGu7VI1M_O2L0VLMw2ZVjr0NYO1ZnF"
   },
   {
     name: "Flag Your Win",
@@ -59,7 +60,8 @@ export const Events = [
       "Ankur Chourasia - 8210037651"
     ],
     club: "ROBOISM",
-    link: "https://forms.gle/AtVNNCoA1xgPXucn8"
+    link: "https://forms.gle/AtVNNCoA1xgPXucn8",
+    pdf: "https://drive.google.com/open?id=1k0p0JswdUrEgO0qP9j1hBWmfMM4uzKqF"
   },
   {
     name: "Death Race",
@@ -91,7 +93,8 @@ export const Events = [
       "Pradyumann - 7023086751"
     ],
     club: "ROBOISM",
-    link: "https://forms.gle/uXZFLVdjHg74gr9w9"
+    link: "https://forms.gle/uXZFLVdjHg74gr9w9",
+    pdf: "https://drive.google.com/open?id=1PmpYs8XW8_wkqubwsgfZDjOUg9NeIOb9"
   },
   {
     name: "Finding Chandler",
@@ -118,7 +121,8 @@ export const Events = [
     },
     admins: ["Naman Khetan - 8949093379", "Sumit Bhattacharya - 9734212678"],
     club: "Data Science Club",
-    link: "https://forms.gle/dbBXfoEt8gJvijLJ8"
+    link: "https://forms.gle/dbBXfoEt8gJvijLJ8",
+    pdf: "https://drive.google.com/open?id=1Oy7Ze7fqfJlkPbRnqLSGSKrINsZzQUrs"
   },
   {
     name: "Capture the flag",
@@ -143,7 +147,8 @@ export const Events = [
     },
     admins: ["Mayank Kumar - 9097982652", "Pawan Dogra - 8988404140"],
     club: "Cyberlabs",
-    link: "https://forms.gle/44upo8djh6gDDBsd7"
+    link: "https://forms.gle/44upo8djh6gDDBsd7",
+    pdf: "https://drive.google.com/open?id=1vXo-SZxxhBY_SreBjx8c2TfNndlOHs4P"
   },
   {
     name: "CodeYaan 1.0",
@@ -168,7 +173,8 @@ export const Events = [
     },
     admins: ["Aryant Shukla - 7355691693"],
     club: "CodeISM",
-    link: "https://forms.gle/1vhdN3E4oBjmMRGEA"
+    link: "http://tiny.cc/CodeYaan",
+    pdf: "https://drive.google.com/open?id=13Sq058RE7AADvqP0myWxO9YQBDBEA9if"
   },
   {
     name: "Maestronics",
@@ -193,7 +199,8 @@ export const Events = [
     },
     admins: ["Yash Raj - 7488420275", "Aryan Prakash - 8809075447"],
     club: "CLEVR",
-    link: "https://forms.gle/oSSe8ycYfLMzsd487"
+    link: "https://forms.gle/oSSe8ycYfLMzsd487",
+    pdf: "https://drive.google.com/open?id=1zC9GoR8Fvqr9oQnx3yPew_0E2iDRRRdb"
   },
   {
     name: "Soft Alite",
@@ -222,7 +229,8 @@ export const Events = [
       "Snehasis Reddy - 9470186670"
     ],
     club: "ARKA",
-    link: "https://forms.gle/PyUsPhi9JVJw2DiC6"
+    link: "https://forms.gle/PyUsPhi9JVJw2DiC6",
+    pdf: "https://drive.google.com/open?id=1ZFRnAx-euZJZ7w-wJ_lh116KM9tps5B8"
   },
   {
     name: "Haul N Fall",
@@ -247,7 +255,9 @@ export const Events = [
     },
     admins: ["Kshitiz Goyal - 9425723040", "Ashish Shukla - 9636092918"],
     club: "",
-    link: "https://forms.gle/1XmVRrGBG9w8wz4x6"
+    link: "https://forms.gle/1XmVRrGBG9w8wz4x6",
+    pdf:
+      "https://drive.google.com/file/d/12kR1UMdaP1bMRmytQ-8Ws2q1x9gkFvD5/view?usp=sharing"
   },
   {
     name: "Magnotech",
@@ -278,7 +288,9 @@ export const Events = [
       "Rohit B. Shirude - 9370320152"
     ],
     club: "",
-    link: "https://forms.gle/sXqodMYuPgmQTiGF9"
+    link: "https://forms.gle/sXqodMYuPgmQTiGF9",
+    pdf:
+      "https://drive.google.com/file/d/1s4ZsmW5o5oneHa2BFuHaywuIMd7DOxDc/view?usp=sharing"
   },
   {
     name: "INDUSTRIAL DESIGN PROBLEM (IDP)",
@@ -308,7 +320,9 @@ export const Events = [
       "Santh Prithvi Raj - 9182473044"
     ],
     club: "",
-    link: "https://forms.gle/c64mP3BAV7hRwU338"
+    link: "https://forms.gle/c64mP3BAV7hRwU338",
+    pdf:
+      "https://drive.google.com/file/d/16rN2l-r3gAOtpoQ0y8gb6dWysZrCia8V/view?usp=sharing"
   },
   {
     name: "Rock The Wagon",
@@ -321,7 +335,7 @@ export const Events = [
     about:
       "The principle behind the making of the car should be based on spring based rocker car system that should convert stored potential energy into spring energy. By choosing proper link lengths and coupler point location,this rocker mechanism transformes spring energy into rotational motion by a connecting 'windings of thread' to wheel rod which ultimately rotates the wheels. Hence the car will start working provided further modification can be done by adding a crank between the car set up.",
     rules:
-      "There can be a maximum of 4 members and minimum of 2 members in a team. A total of 100 marks will be allotted based on quiz, design,effort and speed efficiency of the model with 30,30 and 40 marks given in the respective rounds",
+      "There can be a maximum of 4 members and minimum of 2 members in a team; A total of 100 marks will be allotted based on quiz, design,effort and speed efficiency of the model with 30,30 and 40 marks given in the respective rounds",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/rock+the+wagon.jpg",
     prizes: "",
@@ -340,7 +354,9 @@ export const Events = [
       "Samiksha Umesh Patil - 9370446885"
     ],
     club: "",
-    link: "https://forms.gle/y9VyuBN7NdD1JCM9A"
+    link: "https://forms.gle/y9VyuBN7NdD1JCM9A",
+    pdf:
+      "https://drive.google.com/file/d/1sm6u5XFHFP2VaaDRI1X3Izz2Pa5LaE8K/view?usp=sharing"
   },
   {
     name: "CAD CRAFIAN",
@@ -370,18 +386,20 @@ export const Events = [
       "Akash Kumar - 7355745553"
     ],
     club: "",
-    link: "https://forms.gle/A9B67iJu9nYsWSZv7"
+    link: "https://forms.gle/A9B67iJu9nYsWSZv7",
+    pdf:
+      "https://drive.google.com/file/d/1pLWqB95tKDvZ-vWMIM8ZsHeiTZ0SAG79/view?usp=sharing"
   },
   {
     name: "CRAFT-A-VANE",
     is_team: 1,
     max_participents: 2,
     dept: "Environmental Engineering",
-    description: "",
+    description: " Participants need to make a wind wane.",
     is_club: 0,
     about: "",
     rules:
-      "A DC Motor will be provided to the participants and the participants cannot use any other motor in their models.;Diameter of the blade must not exceed 40 cms.;Entire model must be made out of scrap materials(eg. wood and cardboard), including the blades. Use of readymade base or blades is not allowed.;Use of metal anywhere in the model is not allowed",
+      "A DC Motor will be provided to the participants and the participants cannot use any other motor in their models.;Diameter of the blade must not exceed 40 cms.;Entire model must be made out of scrap materials(eg. wood and cardboard), including the blades.; Use of readymade base or blades is not allowed.;Use of metal anywhere in the model is not allowed",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/craft+a+vane.jpg",
     prizes: "",
@@ -400,7 +418,9 @@ export const Events = [
       "Divya Srivastava - 6388505689"
     ],
     club: "",
-    link: "https://forms.gle/vcUdcqsD9KuTEpvFA"
+    link: "https://forms.gle/vcUdcqsD9KuTEpvFA",
+    pdf:
+      "https://drive.google.com/file/d/1n2pb8JhjwU50GUdFL44z-7OX15ypobzQ/view?usp=sharing"
   },
   {
     name: "Pirates of Terrain",
@@ -431,7 +451,9 @@ export const Events = [
       "Lakshya Attreya - 9479814055"
     ],
     club: "",
-    link: "https://forms.gle/FxjUNVggrHhqqqze6"
+    link: "https://forms.gle/FxjUNVggrHhqqqze6",
+    pdf:
+      "https://drive.google.com/file/d/1KYA2Li0X52hAOzCjVDKL8K-mjj346Aw1/view?usp=sharing"
   },
   {
     name: "EArTH",
@@ -443,7 +465,7 @@ export const Events = [
     about:
       "It is not just a treasure hunt but it is a totally fun-filled event enhancing the adventurous experiences through latest AR technologies. Roam around the campus just as you roam around in amusement parks trying different rides at different times.",
     rules:
-      "The initial clue would be released at the starting point of the treasure hunt i.e. Penman Quadrangle.; The participants would then have to solve the riddle and traverse the path that follows.; The first one to reach the final treasure, after solving all the clues, wins the hunt.What are the restrictions?; Scanning wrong objects consecutively for more than three times would lead to a penalty of 2 minutes wait.; Anyone caught trying to fiddle with the augmented objects would be disqualified.; If 2 or more teams are found helping each other to solve a riddle then both the teams would be disqualified.; Only one member of the team has to download the application for scanning the objects. Multiple downloads per team may result in disqualification.",
+      "The initial clue would be released at the starting point of the treasure hunt i.e. Penman Quadrangle.; The participants would then have to solve the riddle and traverse the path that follows.; The first one to reach the final treasure, after solving all the clues, wins the hunt; Scanning wrong objects consecutively for more than three times would lead to a penalty of 2 minutes wait.; Anyone caught trying to fiddle with the augmented objects would be disqualified.; If 2 or more teams are found helping each other to solve a riddle then both the teams would be disqualified.; Only one member of the team has to download the application for scanning the objects. Multiple downloads per team may result in disqualification.",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/department3.jpg",
     prizes: "",
     fee: 0,
@@ -461,7 +483,9 @@ export const Events = [
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/z21DDUtvxYVBqkPU6"
+    link: "https://forms.gle/z21DDUtvxYVBqkPU6",
+    pdf:
+      "https://drive.google.com/file/d/19vT0rHW8P1pg_nPze0vNkS_SI1jhVzhI/view?usp=sharing"
   },
   {
     name: "INVENTO",
@@ -492,7 +516,9 @@ export const Events = [
       "Naman Joshil - 9198637851"
     ],
     club: "",
-    link: "https://forms.gle/TYXpfXVkBNA5dJ9E8"
+    link: "https://forms.gle/TYXpfXVkBNA5dJ9E8",
+    pdf:
+      "https://drive.google.com/file/d/1J4NH0COUe7pi5ZePyVuK3fKMloNwv93P/view?usp=sharing"
   },
   {
     name: "TRUSS THE FRAME",
@@ -504,7 +530,7 @@ export const Events = [
     is_club: 0,
     about:
       "This is a team event. With the help of the given hints and circuit components provided, the teams have to design and implement a circuit and explain its working.",
-    rules: "Refer the manual",
+    rules: "",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/Truss+The+Frame_main.jpg",
     prizes: "",
@@ -523,7 +549,9 @@ export const Events = [
       "Aditya Shrivastava - 8409975522"
     ],
     club: "",
-    link: "https://forms.gle/CkGPCXCKwutCsvKP9"
+    link: "https://forms.gle/CkGPCXCKwutCsvKP9",
+    pdf:
+      "https://drive.google.com/file/d/1KofkDHpuanGUU3ijq-lFBEMenKakvqk1/view?usp=sharing"
   },
   {
     name: "Tech Triathlon",
@@ -553,7 +581,9 @@ export const Events = [
       "Aditya Shrivastava - 8409975522"
     ],
     club: "",
-    link: ""
+    link: "",
+    pdf:
+      "https://drive.google.com/file/d/1-0eabA2kpdnBN2Gzk97n7tXDNyd241Ec/view?usp=sharing"
   },
   {
     name: "BEAM ENROUTE",
@@ -584,7 +614,9 @@ export const Events = [
       "Anshuman Parui - 7384955287"
     ],
     club: "",
-    link: "https://forms.gle/T4H9tLoBhPctHFxS8"
+    link: "https://forms.gle/T4H9tLoBhPctHFxS8",
+    pdf:
+      "https://drive.google.com/file/d/1k0azmAPp83MNz6OUtjXzi5b2bg_6tfdp/view?usp=sharing"
   },
   {
     name: "CHEM-E-CAR",
@@ -596,7 +628,7 @@ export const Events = [
     is_club: 0,
     about:
       "The energy obtained from conventional source is limited and therefore we are in a dire need of renewable and efficient sources of energy. Hence the major focus of this generation is to explore the use of alternative sources of energy to meet our ever-increasing energy demands.",
-    rules: "Refer Manual;",
+    rules: "",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/chem+o+car.jpg",
     prizes: "",
@@ -615,7 +647,9 @@ export const Events = [
       "Mohit Nagar - 9116801959"
     ],
     club: "",
-    link: "https://forms.gle/RZviCaTiqpTbY5r48"
+    link: "https://forms.gle/RZviCaTiqpTbY5r48",
+    pdf:
+      "https://drive.google.com/file/d/1C2iUVslvsTx2JSN4kTFDpG1JDTLVnNZI/view?usp=sharing"
   },
   {
     name: "EXTREME PROPULSION – 47",
@@ -646,7 +680,9 @@ export const Events = [
       "Anshuman Parui - 7384955287"
     ],
     club: "",
-    link: "https://forms.gle/6YCPrZ6TgjsMTh8w9"
+    link: "https://forms.gle/6YCPrZ6TgjsMTh8w9",
+    pdf:
+      "https://drive.google.com/file/d/10xs0CBuKrTRUk-gHKoAOpSfSdRdktOpp/view?usp=sharing"
   },
   {
     name: "Chem cruise",
@@ -657,7 +693,7 @@ export const Events = [
     is_club: 0,
     about:
       "It is a game in which a set of cards are given to the participants. Each card having different symbol of elements and candidates have to complete the chemical equation by arranging these cards according to the task given. If the reaction equation is completely arranged , they would be shortlisted basing upon less time taken and calculate correct amount(moles) of chemicals required.",
-    rules: "Refer Manual",
+    rules: "",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/chem+cruise.jpg",
     prizes: "",
@@ -676,7 +712,9 @@ export const Events = [
       "Jayprakash Saini - 7062398533"
     ],
     club: "",
-    link: "https://forms.gle/HEuBvXZLY715Cqd87"
+    link: "https://forms.gle/HEuBvXZLY715Cqd87",
+    pdf:
+      "https://drive.google.com/file/d/1re7FJ_rhBJVNWVi0a7uOne7byv1J15dF/view?usp=sharing"
   },
   {
     name: "EMBITREX",
@@ -708,7 +746,9 @@ export const Events = [
       "Shruti Simran - 8107898266"
     ],
     club: "",
-    link: "https://forms.gle/MeC2W3wKRKWAWhTp7"
+    link: "https://forms.gle/MeC2W3wKRKWAWhTp7",
+    pdf:
+      "https://drive.google.com/file/d/1IlJ5_ABeJMClPH1Jv-mLqSARSKpZx7ne/view?usp=sharing"
   },
   {
     name: "Buffet Money 19",
@@ -739,7 +779,9 @@ export const Events = [
       "Himalay Gupta - 8102359522"
     ],
     club: "",
-    link: "https://forms.gle/T4H9tLoBhPctHFxS8"
+    link: "https://forms.gle/T4H9tLoBhPctHFxS8",
+    pdf:
+      "https://drive.google.com/file/d/1kn2p3xP_Gz6OjkM4k8fmbPShsNQTahbo/view?usp=sharing"
   },
   {
     name: "Terra'Stellar",
@@ -769,7 +811,9 @@ export const Events = [
       "Sudeep Gupta - 9451278517"
     ],
     club: "",
-    link: "https://forms.gle/mNzRdSkLYMxA48PA7"
+    link: "https://forms.gle/mNzRdSkLYMxA48PA7",
+    pdf:
+      "https://drive.google.com/file/d/1KWQcYpDC6FNyQYnRA-p7sWdKlQMJ1xTw/view?usp=sharing"
   },
   {
     name: "The Baffling Planet",
@@ -800,14 +844,16 @@ export const Events = [
       "Lakshya Attreya - 9479814055"
     ],
     club: "",
-    link: "https://forms.gle/5KUPwPLjFd1iH9ga8"
+    link: "https://forms.gle/5KUPwPLjFd1iH9ga8",
+    pdf:
+      "https://drive.google.com/file/d/1EaKn47-0Z-7apCkBH9PBBeDAC7BV3YMT/view?usp=sharing"
   },
   {
     name: "Build a Bit",
     is_team: 1,
     max_participents: 5,
     dept: "Computer Science And Engineering",
-    description: "innovate and create",
+    description: "Innovate and Create. ",
     is_club: 0,
     about:
       "The second iteration of one of the most successful events of Concetto'18 welcomes you to a part of Concetto'19.\nWe welcomes multinationals and major companies from the sector of information technology who will provide problem statements to the participating techies of Build-a-Bit. The event would stretch for a duration of around 12 hours, thus, making it an overnight event. At the end, the participants with the most efficient and innovative solutions to the provided problem statements would be declared winners. The winners would solely be decided by the visiting companies and rewarded with exciting goodies. The event has a cash prize of worth more than ?20,000. The rewards don't only end here. If impressed with the quality of skills, the winners might be given an opportunity to pursue an internship under the respective companies. So don't hold back your skills, unleash your passion for coding and participate in this thrilling event of Build-a-Bit.",
@@ -831,10 +877,12 @@ export const Events = [
       "Sameer Jain - 9893636504"
     ],
     club: "",
-    link: "https://forms.gle/4zSx14sLFHrbmqAm7"
+    link: "https://forms.gle/4zSx14sLFHrbmqAm7",
+    pdf:
+      "https://drive.google.com/file/d/10jB4rrkn_KIFc3DFsXgDO9GXrUXv7pVZ/view?usp=sharing"
   },
   {
-    name: "SciTech Quiz",
+    name: "General Quiz",
     is_team: 1,
     max_participants: 5,
     dept: "",
@@ -862,6 +910,7 @@ export const Events = [
       "Ashutosh Sahu - 9658643682"
     ],
     club: "Quiz Club",
-    link: "https://forms.gle/KH9uDs4JHqHaDeWRA"
+    link: "https://forms.gle/KH9uDs4JHqHaDeWRA",
+    pdf: "https://drive.google.com/open?id=1AFqXn8x4sPwlm9i2Yw3jfXJrV-9mypiB"
   }
 ];

@@ -17,6 +17,7 @@ class Workshops extends Component {
             textAlign: "center",
             marginTop: "15px"
           }}
+          className="title"
         >
           WORKSHOPS
         </h1>
@@ -39,21 +40,34 @@ class Workshops extends Component {
                   ></img>
                 </div>
                 <div class={"col-md-7 " + (id % 2 == 0 ? "order-md-1" : "")}>
-                  <h2 class="featurette-heading" align="center">
+                  <h2
+                    class="featurette-heading"
+                    align="center"
+                    style={{ color: "lightblue" }}
+                  >
                     {workshop.name}
                     {/* <br />
                     <span class="text-muted">Manthan</span> */}
                   </h2>
-                  <p class="lead">{workshop.details}</p>
+                  <p>{workshop.details}</p>
                   <p>
                     <a
                       href={workshop.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{ color: "lightblue" }}
                     >
                       Know more..
                     </a>
                   </p>
+                  <a href={workshop.reg_link} target="_blank">
+                    <button
+                      className="btn btn-primary"
+                      style={{ marginLeft: "50%" }}
+                    >
+                      Register <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </React.Fragment>

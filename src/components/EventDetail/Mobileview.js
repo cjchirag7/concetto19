@@ -5,6 +5,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
+import rule_book from "./RuleBook";
 
 class Mobileview extends Component {
   render() {
@@ -56,6 +57,10 @@ class Mobileview extends Component {
               {event.description}
               <br />
               <br />
+              For detailed description, refer the{" "}
+              <a href={event.pdf}>document</a>
+              <br />
+              <br />
               For any queries, feel free to contact :
               <br />
               <ul>
@@ -82,9 +87,9 @@ class Mobileview extends Component {
           <ExpansionPanelDetails>
             <Typography>
               <ul>
-                {event.rules.split(";").map(str => (
-                  <li>{"  " + str}</li>
-                ))}
+                {event.rules
+                  ? event.rules.split(";").map(str => <li>{"  " + str}</li>)
+                  : rule_book({ link: event.pdf })}{" "}
               </ul>
             </Typography>
           </ExpansionPanelDetails>
@@ -102,8 +107,8 @@ class Mobileview extends Component {
               REGISTER
             </div>
           </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <a href={event.link} target="_#">
+          <ExpansionPanelDetails style={{ paddingLeft: "35%" }}>
+            <a href={event.link} target="_blank" rel="noopener noreferrer">
               <button type="button" className="btn btn-primary btn-lg">
                 REGISTER
               </button>
