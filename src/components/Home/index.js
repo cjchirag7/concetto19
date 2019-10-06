@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Footer from "../Footer";
@@ -133,10 +133,10 @@ class Home extends Component {
         <HomeHeader></HomeHeader>
         <div className={classes.logo}>
           <img
-            src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
+            src="images/logo.png"
             className={`logo logo-home`}
             ref={this.homeRef}
-            alt={Loading}
+            alt={"Loading.."}
           />
         </div>
         {
@@ -150,6 +150,7 @@ class Home extends Component {
           >
             <img
               src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.png"
+              // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt="moon"
               style={{ transform: "translateY(" + offset + "vh)" }}

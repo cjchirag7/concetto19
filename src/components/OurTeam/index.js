@@ -40,11 +40,11 @@ class OurTeam extends Component {
             </a>{" "}
           </h2>
         ) : (
-          <h2 align="center">
+          <h2 align="center" style={{ color: "black" }}>
             <a
               href="#"
               className="highlighted"
-              style={{ borderBottom: "2px solid white" }}
+              style={{ borderBottom: "2px solid black", color: "black" }}
             >
               {" "}
               OUR TEAM{" "}
@@ -62,7 +62,14 @@ class OurTeam extends Component {
                   </div>
                   <div class="box-desc">
                     <h5>{person.name}</h5>
-                    <p>{person.post}</p>
+                    <p>
+                      {person.post}
+                      <br />
+                      <a href={"tel:+91" + person.phone} className="phone-link">
+                        <i className="fa fa-phone" />
+                        &nbsp;{person.phone}
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>

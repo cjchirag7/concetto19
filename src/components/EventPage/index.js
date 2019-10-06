@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 import DepartmentEvent from "./DepartmentEvent";
 import ClubEvent from "./ClubEvent";
 import Mobileview from "./Mobileview";
 import HomeHeader from "../HomeHeader";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -27,10 +27,10 @@ const styles = theme => ({
     }
   },
   eventsCard: {
-    marginLeft: '40vh',
-    [theme.breakpoints.down('sm')]: {
-      marginLeft: '0px',
-      display: 'none',
+    marginLeft: "40vh",
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "0px",
+      display: "none"
     }
   }
 });
@@ -38,16 +38,15 @@ const styles = theme => ({
 class EventDetail extends Component {
   constructor(props) {
     super(props);
-    const {events} =props;
+    const { events } = props;
     this.departmentShow = this.departmentShow.bind(this);
     this.clubShow = this.clubShow.bind(this);
     this.state = {
       active: 0,
-      departmental: events.filter(event => (event.is_club===0)),
-      clubEvents: events.filter(event => (event.is_club===1)),
+      departmental: events.filter(event => event.is_club === 0),
+      clubEvents: events.filter(event => event.is_club === 1)
     };
   }
-
 
   clubShow = active => {
     this.setState({
@@ -64,21 +63,21 @@ class EventDetail extends Component {
   }
 
   render() {
-    const { classes,events } = this.props;
-    const {departmental,clubEvents} = this.state;
+    const { classes, events } = this.props;
+    const { departmental, clubEvents } = this.state;
     return (
       <div>
         <div className={classes.root}>
           <HomeHeader />
           <div className={classes.verticalTab}>
             <div>
-              <Link to="home">
+              <NavLink to="home" exact strict>
                 <img
-                  src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
+                  src="/images/logo.png"
                   className="img-fluid"
                   alt={"Loading"}
                 />
-              </Link>
+              </NavLink>
             </div>
             <div className="btnFlex">
               <button
@@ -102,10 +101,10 @@ class EventDetail extends Component {
             </div>
           </div>
           <br />
-          <div
-            className={classes.eventsCard}
-            >
-            {this.state.active === 0 && <DepartmentEvent events={departmental}/>}
+          <div className={classes.eventsCard}>
+            {this.state.active === 0 && (
+              <DepartmentEvent events={departmental} />
+            )}
             {this.state.active === 1 && <ClubEvent events={clubEvents} />}
           </div>
           {window.innerWidth < 960 ? <Mobileview events={events} /> : ""}

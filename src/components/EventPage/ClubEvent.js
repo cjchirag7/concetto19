@@ -29,11 +29,15 @@ class ClubEvent extends Component {
                       xmlns="http://www.w3.org/2000/svg"
                       preserveAspectRatio="xMidYMid slice"
                       focusable="false"
-                      role="img"
                     />
                   </div>
                   <div className="card-info">
-                    <h2 className="card-title">{event.name}</h2>
+                    <h2
+                      className="card-title"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      {event.name}
+                    </h2>
                     <p style={{ color: "green", marginBottom: "10px" }}>
                       {event.prizes}
                     </p>

@@ -26,7 +26,7 @@ class Workshops extends Component {
             <React.Fragment key={id.toString()}>
               <hr class="featurette-divider" style={{ margin: "2rem" }} />
               <div class="row featurette">
-                <div class={"col-md-5 " + (id % 2 == 0 ? "order-md-2" : "")}>
+                <div class={"col-md-5 " + (id % 2 === 0 ? "order-md-2" : "")}>
                   <img
                     src={workshop.img}
                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -35,11 +35,11 @@ class Workshops extends Component {
                     xmlns="http://www.w3.org/2000/svg"
                     preserveAspectRatio="xMidYMid slice"
                     focusable="false"
-                    role="img"
                     aria-label="Placeholder: 500x500"
+                    alt="Loading..."
                   ></img>
                 </div>
-                <div class={"col-md-7 " + (id % 2 == 0 ? "order-md-1" : "")}>
+                <div class={"col-md-7 " + (id % 2 === 0 ? "order-md-1" : "")}>
                   <h2
                     class="featurette-heading"
                     align="center"
@@ -60,7 +60,11 @@ class Workshops extends Component {
                       Know more..
                     </a>
                   </p>
-                  <a href={workshop.reg_link} target="_blank">
+                  <a
+                    href={workshop.reg_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <button
                       className="btn btn-primary"
                       style={{ marginLeft: "50%" }}

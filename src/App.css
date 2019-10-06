@@ -121,14 +121,7 @@ body
 	overflow-y: scroll;
 	margin-bottom: 25px;
  }
-}
-
-html,body{
-  position: relative;
-  overflow-x: hidden;
-}
-
-#thin::-webkit-scrollbar {
+ #thin::-webkit-scrollbar {
 	width: 10px;
 	background-color: #F5F5F5;
 }
@@ -148,6 +141,14 @@ html,body{
 									   color-stop(0.72, rgb(70,70,70)),
 									   color-stop(0.86, rgb(59,59,59)))
 }
+
+}
+
+html,body{
+  position: relative;
+  overflow-x: hidden;
+}
+
 
 .nav-link
 {
@@ -334,7 +335,13 @@ html,body{
   transition: .3s;
   border: 0px;
 }
-button .btn-2:focus{
+button :focus{
+  outline: none !important;
+}
+a :focus{
+  outline: none !important;
+}
+.nav-link :focus{
   outline: none !important;
 }
   .btn-2:after {

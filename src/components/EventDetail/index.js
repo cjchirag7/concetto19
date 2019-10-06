@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "./Styles.css";
-import Loading from "../Loading";
+// import Loading from "../Loading";
 import About from "./About";
 import Rules from "./Rules";
 import Details from "./Details";
@@ -9,6 +9,7 @@ import Register from "./Register";
 import Mobileview from "./Mobileview";
 import Header from "../Header/index";
 import HomeHeader from "../HomeHeader/index";
+import { NavLink } from "react-router-dom";
 
 const styles = theme => ({
   verticalTab: {
@@ -83,13 +84,13 @@ class EventDetail extends Component {
       <div style={{ display: "flex" }}>
         <div className={classes.verticalTab}>
           <div>
-            <a href="home">
+            <NavLink to="../home">
               <img
-                src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.png"
+                src={window.location.origin + "/images/logo.png"}
                 className="img-fluid"
-                alt={Loading}
+                alt={"Loading.."}
               />
-            </a>
+            </NavLink>
           </div>
           <div className="btnFlex">
             <button
