@@ -18,7 +18,7 @@ class Header extends Component {
       document.body.style.overflow = "hidden";
     } else {
       window.scrollBy(0, -window.innerHeight / 10 - 1);
-      document.body.style.overflow = "scroll";
+      document.body.style.overflowY = "scroll";
     }
   }
   render() {

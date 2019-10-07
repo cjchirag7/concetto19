@@ -203,6 +203,35 @@ export const Events = [
     pdf: "https://drive.google.com/open?id=1zC9GoR8Fvqr9oQnx3yPew_0E2iDRRRdb"
   },
   {
+    name: "Bizathon",
+    is_team: 1,
+    max_participants: 5,
+    dept: "",
+    description:
+      " Bizathon is aimed to give direction to startup ideas from its idea to its technical implementation. Bizathon is subdivided into three major events viz workshop on business modelling, product hackathon and shark tank.  Product Hackathon is an overnight event from 12 to 6 am where participants will be building a business model on their idea or if they are unable to come up with an idea, problem statement will be provided by us.  Shark tank is a business plan pitching event in which teams get 5 minutes each to pitch their idea in front of the investors. The team with the best pitch is declared as the winner. ",
+    is_club: 1,
+    about:
+      "Bizathon is a 2-day managerial fiesta conducted by E-Cell IIT(ISM) Dhanbad in Concetto (18-20th October’19) , the Techno - Management fest of IIT(ISM) Dhanbad. Bizathon gives opportunity to innovators, creators and thinkers to learn, innovate design and develop a prototype of the product. Participants can work in small groups under mentorship of industry leaders. ",
+    rules:
+      "Team size should be between 2 to 5 ; Time limit for each team, in Shark Tank, is 5 minutes ",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/bizathon.jpg",
+    prizes: "",
+    fee: 0,
+    start: "",
+    end: "",
+    scores: {
+      first: 50,
+      second: 30,
+      third: 10
+    },
+    admins: ["Devashish Bariko - 9398889882", "Nishee Sharma - 9340129897"],
+    club: "E-Cell",
+    link: "",
+    pdf:
+      "https://drive.google.com/file/d/1T8oZb9PC8VHpeiEW28HFLHYIPUs29QNa/view?usp=sharing"
+  },
+  {
     name: "Soft Alight",
     is_team: 1,
     max_participants: 4,
@@ -215,7 +244,7 @@ export const Events = [
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/soft_alite.jpg",
     prizes: "",
-    fee: 0,
+    fee: 100,
     start: "",
     end: "",
     scores: {
@@ -226,7 +255,7 @@ export const Events = [
     admins: [
       "GS Rehan - 7737662383",
       "Shubham Kumar - 7254922359",
-      "Snehasis Reddy - 9470186670"
+      "Snehasis Addy - 9470186670"
     ],
     club: "ARKA",
     link: "https://forms.gle/PyUsPhi9JVJw2DiC6",
@@ -244,7 +273,7 @@ export const Events = [
     rules: "",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/events/petro.jpg",
     prizes: "",
-    fee: 0,
+    fee: 200,
     start: "",
     end: "",
     scores: {
@@ -423,39 +452,6 @@ export const Events = [
       "https://drive.google.com/file/d/1n2pb8JhjwU50GUdFL44z-7OX15ypobzQ/view?usp=sharing"
   },
   {
-    name: "Pirates of Terrain",
-    is_team: 1,
-    max_participents: 3,
-    dept: "Applied Geology",
-    description:
-      "This event is three round event which tests the map plotting skills.",
-    is_club: 0,
-    about: "",
-    rules:
-      "Each team can consist of maximum of 3 members.;In case of any discrepancy, the decision of the judge would be binding.",
-    img:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/pirates+of+terrain.jpg",
-    prizes: "",
-    fee: 0,
-    start: "",
-    end: "",
-    scores: {
-      first: 50,
-      second: 30,
-      third: 10
-    },
-    admins: [
-      "Durgam Mohan Pranay - 8309883701",
-      "Akshay - 7255925721",
-      "Prateek Dubey - 8959534800",
-      "Lakshya Attreya - 9479814055"
-    ],
-    club: "",
-    link: "https://forms.gle/FxjUNVggrHhqqqze6",
-    pdf:
-      "https://drive.google.com/file/d/1KYA2Li0X52hAOzCjVDKL8K-mjj346Aw1/view?usp=sharing"
-  },
-  {
     name: "EARTH",
     is_team: 0,
     max_participents: 1,
@@ -502,7 +498,7 @@ export const Events = [
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/invento.jpg",
     prizes: "",
-    fee: 0,
+    fee: 50,
     start: "",
     end: "",
     scores: {
@@ -535,7 +531,7 @@ export const Events = [
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/Truss+The+Frame_main.jpg",
     prizes: "",
-    fee: 0,
+    fee: 200,
     start: "",
     end: "",
     scores: {
@@ -618,6 +614,40 @@ export const Events = [
     link: "https://forms.gle/T4H9tLoBhPctHFxS8",
     pdf:
       "https://drive.google.com/file/d/1k0azmAPp83MNz6OUtjXzi5b2bg_6tfdp/view?usp=sharing"
+  },
+  {
+    name: "EMBITREX",
+    is_team: 1,
+    max_participents: null,
+    dept: "Electronics Engineering",
+    description:
+      "Enchant with the flavours of electronic circuits..Embitrex, the event conducted by Electronics Engineering Department insist you with the smack of electronic devices to students by following 3 sequential rounds.",
+    is_club: 0,
+    about: "",
+    rules: "",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/circuit.jpg",
+    prizes: "",
+    fee: 0,
+    start: "",
+    end: "",
+    scores: {
+      first: 50,
+      second: 30,
+      third: 10
+    },
+    admins: [
+      "Vartika Singh - 9199406248",
+      "Saurabh Kumar - 9123416045",
+      "Mekala Sahaj - 9490044379",
+      "Banoth Naveen - 9133973790",
+      "Harshika Dhoot - 7987068044",
+      "Shruti Simran - 8107898266"
+    ],
+    club: "",
+    link: "https://forms.gle/MeC2W3wKRKWAWhTp7",
+    pdf:
+      "https://drive.google.com/file/d/1IlJ5_ABeJMClPH1Jv-mLqSARSKpZx7ne/view?usp=sharing"
   },
   {
     name: "CHEM-E-CAR",
@@ -718,17 +748,18 @@ export const Events = [
       "https://drive.google.com/file/d/1re7FJ_rhBJVNWVi0a7uOne7byv1J15dF/view?usp=sharing"
   },
   {
-    name: "EMBITREX",
+    name: "Pirates of Terrain",
     is_team: 1,
-    max_participents: null,
-    dept: "Electronics Engineering",
+    max_participents: 3,
+    dept: "Applied Geology",
     description:
-      "Enchant with the flavours of electronic circuits..Embitrex, the event conducted by Electronics Engineering Department insist you with the smack of electronic devices to students by following 3 sequential rounds.",
+      "This event is three round event which tests the map plotting skills.",
     is_club: 0,
     about: "",
-    rules: "",
+    rules:
+      "Each team can consist of maximum of 3 members.;In case of any discrepancy, the decision of the judge would be binding.",
     img:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/circuit.jpg",
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/pirates+of+terrain.jpg",
     prizes: "",
     fee: 0,
     start: "",
@@ -739,17 +770,15 @@ export const Events = [
       third: 10
     },
     admins: [
-      "Vartika Singh - 9199406248",
-      "Saurabh Kumar - 9123416045",
-      "Mekala Sahaj - 9490044379",
-      "Banoth Naveen - 9133973790",
-      "Harshika Dhoot - 7987068044",
-      "Shruti Simran - 8107898266"
+      "Durgam Mohan Pranay - 8309883701",
+      "Akshay - 7255925721",
+      "Prateek Dubey - 8959534800",
+      "Lakshya Attreya - 9479814055"
     ],
     club: "",
-    link: "https://forms.gle/MeC2W3wKRKWAWhTp7",
+    link: "https://forms.gle/FxjUNVggrHhqqqze6",
     pdf:
-      "https://drive.google.com/file/d/1IlJ5_ABeJMClPH1Jv-mLqSARSKpZx7ne/view?usp=sharing"
+      "https://drive.google.com/file/d/1KYA2Li0X52hAOzCjVDKL8K-mjj346Aw1/view?usp=sharing"
   },
   {
     name: "Buffet Money 19",
@@ -780,7 +809,7 @@ export const Events = [
       "Himalay Gupta - 8102359522"
     ],
     club: "",
-    link: "https://forms.gle/T4H9tLoBhPctHFxS8",
+    link: "https://forms.gle/qHk5LnjGPygrLhyc9",
     pdf:
       "https://drive.google.com/file/d/1kn2p3xP_Gz6OjkM4k8fmbPShsNQTahbo/view?usp=sharing"
   },

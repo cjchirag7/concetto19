@@ -28,7 +28,7 @@ class Mobileview extends Component {
           <ExpansionPanelDetails>
             <Typography>
               {" "}
-              {` About:- ${(!event.about ? event.description : "") +
+              {` About : ${(!event.about ? event.description : "") +
                 "\n " +
                 event.about} \n `}
               <br />
@@ -57,6 +57,16 @@ class Mobileview extends Component {
           <ExpansionPanelDetails>
             <Typography>
               {event.description}
+              {event.fee ? (
+                <React.Fragment>
+                  <br />
+                  <br />
+                  Participation fees &nbsp; : &nbsp; &#8377; {event.fee} /- per{" "}
+                  {event.is_team ? " team " : " person "}
+                </React.Fragment>
+              ) : (
+                ""
+              )}
               <br />
               <br />
               For detailed description, refer the{" "}

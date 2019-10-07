@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 // import { ConfigureStore } from "./redux/store.js";
 import Amplify from "aws-amplify";
 import aws_exports from "./aws-exports";
-
+import "./background.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.css";
 import "./App.css";

@@ -13,7 +13,7 @@ class Header extends Component {
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
     if (!isMenuOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "scroll";
+    else document.body.style.overflowY = "scroll";
   }
   render() {
     const { isMenuOpen } = this.state;

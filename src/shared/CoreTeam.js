@@ -49,6 +49,13 @@ export const CoreTeam = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/ShashwatRaj.jpg",
     phone: "7903592830"
   },
+  {
+    name: "Pulkit Singh",
+    post: "Sponsorship Head",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/PulkitSingh.jpg",
+    phone: "9546392727"
+  },
   // {
   //   name: "Vislavath Shirisha",
   //   post: "Exhibition Coordinator",
@@ -125,13 +132,6 @@ export const CoreTeam = [
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/AnkitKumar.jpg",
     phone: "7542952995"
-  },
-  {
-    name: "Pulkit Singh",
-    post: "Sponsorship Team",
-    pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/PulkitSingh.jpg",
-    phone: "9546392727"
   },
   {
     name: "Avtar Arora",
