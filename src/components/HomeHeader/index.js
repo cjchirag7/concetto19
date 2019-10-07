@@ -13,9 +13,13 @@ class Header extends Component {
     //let scrollTop = window.pageYOffset;
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
-    if (!isMenuOpen)
+    if (!isMenuOpen) {
       window.scrollBy(0, window.innerHeight / 10 + 1);
-    else window.scrollBy(0, - window.innerHeight / 10 - 1);
+      document.body.style.overflow = "hidden";
+    } else {
+      window.scrollBy(0, -window.innerHeight / 10 - 1);
+      document.body.style.overflow = "scroll";
+    }
   }
   render() {
     const { isMenuOpen } = this.state;

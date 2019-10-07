@@ -70,3 +70,22 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 430px){
+  .col-12{
+    font-size: 1.4rem;
+  }
+  .title{
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 300px){
+  .col-12{
+    font-size: 1.1rem;
+  }
+  .title{
+    font-size: 1.4rem;
+  }
+
+}

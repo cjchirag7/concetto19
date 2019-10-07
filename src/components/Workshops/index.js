@@ -15,7 +15,7 @@ class Workshops extends Component {
         <h1
           style={{
             textAlign: "center",
-            marginTop: "15px"
+            marginTop: "20px"
           }}
           className="title"
         >
@@ -60,18 +60,20 @@ class Workshops extends Component {
                       Know more..
                     </a>
                   </p>
-                  <a
-                    href={workshop.reg_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button
-                      className="btn btn-primary"
-                      style={{ marginLeft: "50%" }}
+                  <p align="center">
+                    <a
+                      href={workshop.reg_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      Register <i class="fa fa-arrow-circle-right"></i>
-                    </button>
-                  </a>
+                      <button
+                        className="btn btn-primary text-center"
+                        // style={{ marginLeft: "50%" }}
+                      >
+                        Register <i class="fa fa-arrow-circle-right"></i>
+                      </button>
+                    </a>
+                  </p>
                 </div>
               </div>
             </React.Fragment>

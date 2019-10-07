@@ -3,7 +3,7 @@ export const Events = [
     name: "ROBOWARS",
     is_team: 1,
     max_participants: 5,
-    about: " ",
+    about: "",
     dept: null,
     description:
       "To Build a Wired/Wireless, Manually controlled robot capable of subduing its opponent.",
@@ -27,7 +27,7 @@ export const Events = [
       "Shantanu Rawat - 9424697088",
       "Sourav Sahu - 8825268970"
     ],
-    club: "ROBOISM",
+    club: "RoboISM",
     link: "https://forms.gle/vdzkN5AgbPp8TEk77",
     pdf: "https://drive.google.com/open?id=11XvGu7VI1M_O2L0VLMw2ZVjr0NYO1ZnF"
   },
@@ -56,10 +56,10 @@ export const Events = [
     admins: [
       "Jyothi Swaroop - 9381070838",
       "Abhishek Das - 9602624394",
-      "Eric John - 9570093144",
-      "Ankur Chourasia - 8210037651"
+      "Aayushman Mishra - 7050069256",
+      "Pradyumna Gupta - 7023086751"
     ],
-    club: "ROBOISM",
+    club: "RoboISM",
     link: "https://forms.gle/AtVNNCoA1xgPXucn8",
     pdf: "https://drive.google.com/open?id=1k0p0JswdUrEgO0qP9j1hBWmfMM4uzKqF"
   },
@@ -89,10 +89,10 @@ export const Events = [
     admins: [
       "Suddunuri Sandeep - 9381334004",
       "Harshit Jain - 9302267426",
-      "Aayushmaan Mishra - 7050069256",
-      "Pradyumann - 7023086751"
+      "Eric John - 9570093144",
+      "Ankur Chourasia - 8210037651"
     ],
-    club: "ROBOISM",
+    club: "RoboISM",
     link: "https://forms.gle/uXZFLVdjHg74gr9w9",
     pdf: "https://drive.google.com/open?id=1PmpYs8XW8_wkqubwsgfZDjOUg9NeIOb9"
   },
@@ -236,7 +236,7 @@ export const Events = [
     name: "Haul N Fall",
     is_team: 1,
     max_participents: 5,
-    dept: "Petroleum engineering",
+    dept: "Petroleum Engineering",
     description: "",
     is_club: 0,
     about:

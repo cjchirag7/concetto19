@@ -7,6 +7,10 @@
   padding: 0px auto;
 }
 
+a, a:hover{
+color: lightseagreen;
+}
+
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
@@ -168,6 +172,13 @@ html,body{
 {
   color: gold;
   letter-spacing: 0.3em;
+}
+
+@media (max-height: 600px) {
+.nav-link
+{
+  padding: 0;
+}
 }
 
 #menuToggle
