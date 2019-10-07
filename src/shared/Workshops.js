@@ -37,12 +37,13 @@ export const Workshop_list = [
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
   },
   {
-    name: "Machine Learning",
+    name: "Data Science and Artificial Intelligence",
     link:
       "https://drive.google.com/file/d/1mRqCc4E92zJWmOTQQS9a_sq-DmRoVG0Y/view?usp=sharing",
-    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop1.jpg",
+    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ML.jpg",
     details:
-      "Machine learning is a field of study that helps machines to learn without being explicitly programmed. Machine Learning has become the hottest computer science topic of 21st century. All big giants such as Google, Microsoft, Apple, Amazon are working on ML projects. We use ML in our day to day life. To gap the bridge between industrial requirements and student’s curriculum we at coding blocks designed a new course on Machine Learning Master Course. In this course you will implement most of the popular ML algorithms from scratch and build 20 interesting projects like Image Classifications, AI Caption Bot, Game Playing AI and many more. ",
-    reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
+      "Concetto and ACM Student Chapter, IIT(ISM) Dhanbad are organizing the Data Science and Artificial Intelligence Workshop that will be conducted in collaboration with the edu-tech giant Coding Blocks.This will be followed by Prize Distribution of ACM League Of Code organised during last Summer vacations.; The Co- founder of Coding Blocks, Prateek Narang(http://www.prateeknarang.com) will address the students and provide the freshers with a deeper insight of Artificial Intelligence and Data Science from learning at college level to it's implementation in the industrial level. He will be accompanied by the Head of Marketing of Coding Blocks, Jatin Virmani.; Participation certificate and goodies for each participant; Free for ACM Student Chapter Members and ₹100 / - for all other Non - ACM Members ; T - shirts and goodies for all winners during workshop from Coding Blocks and GeeksForGeeks",
+    reg_link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSePuP1VVHvn4FDNqFPHGeuT0xeQDg17gR8DMGk4vUKPpim58g/viewform"
   }
 ];

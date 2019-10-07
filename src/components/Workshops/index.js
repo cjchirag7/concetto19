@@ -26,7 +26,14 @@ class Workshops extends Component {
             <React.Fragment key={id.toString()}>
               <hr class="featurette-divider" style={{ margin: "2rem" }} />
               <div class="row featurette">
-                <div class={"col-md-5 " + (id % 2 === 0 ? "order-md-2" : "")}>
+                <div
+                  class={"col-md-5 " + (id % 2 === 0 ? "order-md-2" : "")}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    flexWrap: "wrap"
+                  }}
+                >
                   <img
                     src={workshop.img}
                     class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
@@ -49,7 +56,9 @@ class Workshops extends Component {
                     {/* <br />
                     <span class="text-muted">Manthan</span> */}
                   </h2>
-                  <p>{workshop.details}</p>
+                  {workshop.details.split(";").map(sentence => (
+                    <p>{sentence}</p>
+                  ))}
                   <p>
                     <a
                       href={workshop.link}

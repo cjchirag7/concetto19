@@ -68,19 +68,19 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/events"
+                  to="/workshops"
                   onClick={this.toggleMenu}
                 >
-                  EVENTS
+                  WORKSHOPS
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/workshops"
+                  to="/events"
                   onClick={this.toggleMenu}
                 >
-                  WORKSHOPS
+                  EVENTS
                 </NavLink>
               </li>
               <li>
