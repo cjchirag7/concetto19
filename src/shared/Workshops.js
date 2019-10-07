@@ -1,5 +1,15 @@
 export const Workshop_list = [
   {
+    name: "Data Science and Artificial Intelligence",
+    link:
+      "https://drive.google.com/file/d/1mRqCc4E92zJWmOTQQS9a_sq-DmRoVG0Y/view?usp=sharing",
+    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ML.jpg",
+    details:
+      "Concetto and ACM Student Chapter, IIT(ISM) Dhanbad are organizing the Data Science and Artificial Intelligence Workshop that will be conducted in collaboration with the edu-tech giant Coding Blocks.This will be followed by Prize Distribution of ACM League Of Code organised during last Summer vacations.; The Co- founder of Coding Blocks, Prateek Narang(http://www.prateeknarang.com) will address the students and provide the freshers with a deeper insight of Artificial Intelligence and Data Science from learning at college level to it's implementation in the industrial level. He will be accompanied by the Head of Marketing of Coding Blocks, Jatin Virmani.; Participation certificate and goodies for each participant; Free for ACM Student Chapter Members and ₹100 / - for all other Non - ACM Members ; T - shirts and goodies for all winners during workshop from Coding Blocks and GeeksForGeeks",
+    reg_link:
+      "https://docs.google.com/forms/d/e/1FAIpQLSePuP1VVHvn4FDNqFPHGeuT0xeQDg17gR8DMGk4vUKPpim58g/viewform"
+  },
+  {
     name: "Cyber Security and Ethical Hacking",
     link:
       "https://drive.google.com/file/d/1MLdCddM7q1Lupvjt5LNyb7qGZyV41oIZ/view?usp=sharing",
@@ -35,15 +45,5 @@ export const Workshop_list = [
     details:
       "Robots are the center of attention for everyone, how intelligent and useful they can be, has always been interesting. Concetto’19 brings to you a workshop on ‘HUMANOID ROBOTICS’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. Projects like PWM Generation, Servo Interfacing, Angle Calculation, No, Namaste, Walking (Forward, Back, Left, Right & Back), Dancing Robot will be covered in the workshop ",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
-  },
-  {
-    name: "Data Science and Artificial Intelligence",
-    link:
-      "https://drive.google.com/file/d/1mRqCc4E92zJWmOTQQS9a_sq-DmRoVG0Y/view?usp=sharing",
-    img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ML.jpg",
-    details:
-      "Concetto and ACM Student Chapter, IIT(ISM) Dhanbad are organizing the Data Science and Artificial Intelligence Workshop that will be conducted in collaboration with the edu-tech giant Coding Blocks.This will be followed by Prize Distribution of ACM League Of Code organised during last Summer vacations.; The Co- founder of Coding Blocks, Prateek Narang(http://www.prateeknarang.com) will address the students and provide the freshers with a deeper insight of Artificial Intelligence and Data Science from learning at college level to it's implementation in the industrial level. He will be accompanied by the Head of Marketing of Coding Blocks, Jatin Virmani.; Participation certificate and goodies for each participant; Free for ACM Student Chapter Members and ₹100 / - for all other Non - ACM Members ; T - shirts and goodies for all winners during workshop from Coding Blocks and GeeksForGeeks",
-    reg_link:
-      "https://docs.google.com/forms/d/e/1FAIpQLSePuP1VVHvn4FDNqFPHGeuT0xeQDg17gR8DMGk4vUKPpim58g/viewform"
   }
 ];
