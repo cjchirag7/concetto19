@@ -14,6 +14,7 @@ import ComingSoon from "./ComingSoon";
 import { Events } from "../shared/Events";
 import Workshops from "./Workshops";
 import AboutTheme from "./AboutTheme";
+import GuestTalk from "./GuestTalks";
 
 // const mapStateToProps = state => {
 //   return {
@@ -201,6 +202,7 @@ class Main extends Component {
           <Route exact path="/coming-soon" component={() => <ComingSoon />} />
           <Route exact path="/workshops" component={() => <Workshops />} />
           <Route exact path="/about-theme" component={() => <AboutTheme />} />
+          <Route exact path="/guest-talks" component={() => <GuestTalk />} />
           <Route
             exact
             path="/events"

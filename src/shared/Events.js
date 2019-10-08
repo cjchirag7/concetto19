@@ -55,13 +55,14 @@ export const Events = [
     },
     admins: [
       "Jyothi Swaroop - 9381070838",
-      "Abhishek Das - 9602624394",
+      "Parth Khanna - 7322912917",
       "Aayushman Mishra - 7050069256",
       "Pradyumna Gupta - 7023086751"
     ],
     club: "RoboISM",
     link: "https://forms.gle/AtVNNCoA1xgPXucn8",
-    pdf: "https://drive.google.com/open?id=1k0p0JswdUrEgO0qP9j1hBWmfMM4uzKqF"
+    pdf:
+      "https://drive.google.com/file/d/1hqOCFJ8_UZIoVu70Xe_YAabGcEwbRL8B/view?usp=sharing"
   },
   {
     name: "Death Race",
@@ -184,7 +185,7 @@ export const Events = [
     description: "An Electronic Hunt",
     is_club: 1,
     about:
-      "You were on the final stage of designing the next great processor. You got exhausted and went for a nap. When you return, you find a note lying over your circuit. Can you beat him?",
+      "You were in the final stage of designing the next great processor. You got exhausted and went for a nap. When you return, you see someone has left a note for you!\nThe excitement of being the next great thing in the industry is clouded by anxiety. It's time to get your neurons buzzing as you are running out of time! \nCan you outwit the riddler?",
     rules: "",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/maestronics.jpg",
@@ -197,10 +198,17 @@ export const Events = [
       second: 30,
       third: 10
     },
-    admins: ["Yash Raj - 7488420275", "Aryan Prakash - 8809075447"],
+    admins: [
+      "Yash Raj - 7488420275",
+      "Ayan Prakash - 8809075447",
+      "Saket Gupta - 9974928447",
+      "Avinash - 9794723866",
+      "Udit Khemka - 8009383745"
+    ],
     club: "CLEVR",
     link: "https://forms.gle/oSSe8ycYfLMzsd487",
-    pdf: "https://drive.google.com/open?id=1zC9GoR8Fvqr9oQnx3yPew_0E2iDRRRdb"
+    pdf:
+      "https://docs.google.com/document/d/1sfHekZQr51ms1Q5hERrcaYMQyhTWVpbn4fNS1VJdRkQ/edit?usp=sharing"
   },
   {
     name: "Bizathon",
