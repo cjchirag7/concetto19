@@ -1,17 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: hidden;
-}
 .image1M {
     transform: translateZ(100vw);
-    margin-right: 1000px; 
+    margin-right: 1000px;
 }
 .image2M {
     transform: rotateY(-120deg) translateZ(100vw);
