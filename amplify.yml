@@ -1,0 +1,29 @@
+version: 0.1
+backend:
+  phases:
+    build:
+      commands:
+        - '# Execute Amplify CLI with the helper script'
+        - amplifyPush --simple
+frontend:
+  phases:
+    preBuild:
+      commands:
+	 - '# This installs Chrome on any RHEL/CentOS/Amazon Linux variant.'
+        - curl https://intoli.com/install-google-chrome.sh | bash
+        - yarn install
+	- babel-node sitemap-generator.js
+
+    build:
+      commands:
+        - yarn run build
+    postBuild:
+      commands:
+   	 - react-snap
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

@@ -66,6 +66,10 @@
     "babel-register": "^6.26.0"
   },
   "reactSnap": {
-    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable"
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "puppeteerExecutablePath": "/opt/google/chrome/google-chrome"
   }
 }
