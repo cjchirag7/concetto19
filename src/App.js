@@ -1,6 +1,7 @@
 import React from "react";
 import Main from "./components/MainComponent";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
 // import { Provider } from "react-redux";
 // import { ConfigureStore } from "./redux/store.js";
 import Amplify from "aws-amplify";
@@ -20,14 +21,14 @@ function App() {
       <div id="stars" />
       <div id="stars2" />
       <div id="stars3" />
-      <BrowserRouter>
+      <HashRouter>
         {
           // to be replaced by BrowserRouter
         }
         <div className="App">
           <Main />
         </div>
-      </BrowserRouter>
+      </HashRouter>
       {/* // </Provider> */}
     </React.Fragment>
   );
