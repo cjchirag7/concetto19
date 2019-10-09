@@ -9,7 +9,6 @@ frontend:
   phases:
     preBuild:
       commands:
-	 - '# This installs Chrome on any RHEL/CentOS/Amazon Linux variant.'
         - curl https://intoli.com/install-google-chrome.sh | bash
         - yarn install
 	- babel-node sitemap-generator.js
