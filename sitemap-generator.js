@@ -26,7 +26,7 @@ function generateSitemap() {
 
   return new Sitemap(router)
     .applyParams(paramsConfig)
-    .build("https://www.concetto19.tech") //#
+    .build("https://www.concetto19.tech/#") //#
     .save("./public/sitemap.xml");
 }
 
