@@ -11,7 +11,7 @@ frontend:
       commands:
         - curl https://intoli.com/install-google-chrome.sh | bash
         - yarn install
-	- babel-node sitemap-generator.js
+	- yarn run sitemap
 
     build:
       commands:
