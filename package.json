@@ -66,6 +66,6 @@
     "babel-register": "^6.26.0"
   },
   "reactSnap": {
-    "inlineCss": true
+    "puppeteerExecutablePath": "/usr/bin/google-chrome-unstable"
   }
 }
