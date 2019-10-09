@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
 // import Loading from "../Loading";
 import DepartmentEvent from "./DepartmentEvent";
+import {Link} from 'react-router-dom';
 import ClubEvent from "./ClubEvent";
 import Mobileview from "./Mobileview";
 import HomeHeader from "../HomeHeader";
@@ -66,7 +67,7 @@ class EventDetail extends Component {
               </NavLink>
             </div>
             <div className="btnFlex">
-              <a href="./department-events">
+              <Link to="department-events">
               <button
                 className={
                   "btn btn-event btn-2 " +
@@ -76,8 +77,8 @@ class EventDetail extends Component {
               >
                 DEPARTMENT
               </button>
-              </a>
-              <a href="./club-events">
+              </Link>
+              <Link to ="club-events">
               <button
                 className={
                   "btn btn-event btn-2 " +
@@ -86,7 +87,7 @@ class EventDetail extends Component {
               >
                 CLUB
               </button>
-              </a>
+              </Link>
             </div>
           </div>
           <br />
