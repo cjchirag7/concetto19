@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import HomeHeader from "../HomeHeader";
 import Parallax from "../parallax";
 import Parallax2 from "../parallax2";
+import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../shared/Content";
 import "./styles.css";
 let max_offset, initial_offset;
@@ -27,7 +28,10 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    [theme.breakpoints.down('sm')]:{
+      marginTop: '0px'
+    }
   },
   moon: {
     display: "flex",
@@ -186,10 +190,12 @@ class Home extends Component {
         }
         <div className={classes.parallax}>
           {HomeContent.map((content, id) => {
-            if (id % 2 === 0)
+            if(window.innerWidth<992)
+              return <ParallaxM key={id.toString()} content={content} />;
+            else if (id % 2 === 0)
               return <Parallax x={x} key={id.toString()} content={content} />;
             else
-              return window.innerWidth > 800 ? (
+              return window.innerWidth >= 1200 ? (
                 <Parallax2 x={x} key={id.toString()} content={content} />
               ) : (
                 <Parallax x={x} key={id.toString()} content={content} />

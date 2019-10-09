@@ -202,5 +202,12 @@ export const CoreTeam = [
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/SaiVishal.jpg",
     phone: "8897364768"
+  },
+  {
+    name: "Jahanvi Jain",
+    post: "Public Relations",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Jahanvi+Jain.jpg",
+    phone: "9406968931"
   }
 ];

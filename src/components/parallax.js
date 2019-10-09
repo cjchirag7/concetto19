@@ -85,14 +85,14 @@ class Parallax extends React.Component {
           <div
             ref={this.parent}
             className={
-              window.innerWidth > 800
+              window.innerWidth > 991
                 ? classNames(classes.images, "col-6")
                 : "col-12"
             }
           >
             <img
               style={
-                window.innerWidth > 800
+                window.innerWidth > 991
                   ? {
                       transform: `translateY(${-(-this.parentOffsetTop + x) /
                         8}px)`
@@ -102,7 +102,7 @@ class Parallax extends React.Component {
               src={content.image1}
               alt="Loading..."
               className={
-                window.innerWidth > 800
+                window.innerWidth > 991
                   ? classNames(
                       classes.image1,
                       "col-offset-2 col-8 col-md-2",
@@ -111,10 +111,10 @@ class Parallax extends React.Component {
                   : classNames(classes.image1M, "col-12")
               }
             />
-            {window.innerWidth > 800 ? (
+            {window.innerWidth > 991 ? (
               <img
                 style={
-                  window.innerWidth > 800
+                  window.innerWidth > 991
                     ? {
                         transform: `translateY(${(-this.parentOffsetTop + x) /
                           16}px)`
@@ -134,10 +134,10 @@ class Parallax extends React.Component {
                 }
               />
             ) : null}
-            {window.innerWidth > 800 ? (
+            {window.innerWidth > 991 ? (
               <img
                 style={
-                  window.innerWidth > 800
+                  window.innerWidth > 991
                     ? {
                         transform: `translateY(${-(-this.parentOffsetTop + x) /
                           2}px)`
@@ -147,7 +147,7 @@ class Parallax extends React.Component {
                 src={content.image3}
                 alt="Loading..."
                 className={
-                  window.innerWidth > 800
+                  window.innerWidth > 991
                     ? classNames(
                         classes.image3,
                         "col-offset-2 col-8 col-md-2",
@@ -160,11 +160,11 @@ class Parallax extends React.Component {
           </div>
           <div
             className={
-              window.innerWidth > 800
+              window.innerWidth > 991
                 ? classNames(classes.text, "col-12 col-md-3")
-                : classNames("col-12 col-md-3")
+                : classNames("col-12")
             }
-            style={{ textAlign: "center" }}
+            style={window.innerWidth<1200&&window.innerWidth>991?{textAlign: "center",marginLeft: '0px', }:{textAlign: 'center'}}
           >
             <Link to={content.link} className={" title"}>
               <h1 style={{ color: "lightblue" }} className="title">
