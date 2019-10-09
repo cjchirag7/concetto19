@@ -822,7 +822,7 @@ export const Events = [
       "https://drive.google.com/file/d/1kn2p3xP_Gz6OjkM4k8fmbPShsNQTahbo/view?usp=sharing"
   },
   {
-    name: "Terra'Stellar",
+    name: "Terra Stellar",
     is_team: 1,
     max_participents: 3,
     dept: "Applied Geophysics",
