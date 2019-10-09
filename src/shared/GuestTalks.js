@@ -17,7 +17,7 @@ export const GuestTalks = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/GuestTalks/SandeepJain.jpg",
     about:
       "We all have tried a hand at coding in our college life at one point of time or another. Whenever we failed to get the underlying logic and algorithm required to solve a problem, we had a website (now even an Android app) to our rescue. Explaining problems that seemed impossible in the first attempt with ease, GeeksForGeeks has been the go-to place for all cyber geeks. With benefits ranging from various concepts to preparation for interviews, the website has been changing lives.; Concetto'19 feels proud to reveal our second guest for Tech Talk, SANDEEP JAIN, CEO of GeeksForGeeks.; Sandeep Jain is an IIT Roorkee alumnus and founder of ‘GeeksforGeeks’. He loves to solve programming problems in most efficient ways. Apart from GeeksforGeeks, he has worked with DE Shaw and Co. as a software developer and JIIT Noida as an assistant professor.; Concetto'19 believes a mind so thoughtful can ignite so many innovators who share the idea and hope to get a deeper insight from the brains behind the website that made being computer geeks so cool. A website made by the Geeks, for the Geeks, GeeksForGeeks.",
-    time: "Coming Soon",
+    time: "20th October",
     place: "",
     link:
       "https://www.linkedin.com/in/sandeep-jain-b3940815/?originalSubdomain=in"
