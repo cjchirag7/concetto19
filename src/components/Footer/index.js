@@ -68,6 +68,14 @@ class Footer extends React.Component {
         <a href="https://wa.me/919386667625" className={classes.a}>
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a>
+        <a
+          href="https://concetto-front.s3.ap-south-1.amazonaws.com/map-89+final2-min.png"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.a}
+        >
+         <i className="fa fa-map"></i>
+          </a>
       </div>
     );
   }
