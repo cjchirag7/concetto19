@@ -16,7 +16,7 @@ class ClubEvent extends Component {
             <div className="cards">
               <div className="card-item" id={event.name}>
                 <Link
-                  to={`events/${event.name}`}
+                  to={`club-events/${event.name.split(" ").join("-")}`}
                   style={{ textDecoration: "none" }}
                 >
                   <div className="card-image">

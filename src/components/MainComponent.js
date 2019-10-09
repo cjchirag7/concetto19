@@ -86,9 +86,9 @@ class Main extends Component {
   render() {
     const { events } = this.state;
     const EventWithName = ({ match }) => {
-      let selectedEvent = events.filter(
-        event => event.name === match.params.eventName
-      )[0];
+      let matchName = match.params.eventName.split("-").join(" ");
+      console.log(matchName);
+      let selectedEvent = events.filter(event => event.name === matchName)[0];
       // let notFoundErr = null;
       if (selectedEvent === undefined) {
         return <ComingSoon />;
@@ -203,14 +203,32 @@ class Main extends Component {
           <Route exact path="/workshops" component={() => <Workshops />} />
           <Route exact path="/about-theme" component={() => <AboutTheme />} />
           <Route exact path="/guest-talks" component={() => <GuestTalk />} />
-          <Route
+          {/* <Route
             exact
             path="/events"
             component={() => (
-              <EventPage events={events} auth={this.props.auth} />
+              <EventPage events={events} active={0} auth={this.props.auth} />
+            )}
+          /> */}
+          <Route
+            exact
+            path="/department-events"
+            component={() => (
+              <EventPage events={events} active={0} auth={this.props.auth} />
             )}
           />
-          <Route path="/events/:eventName" component={EventWithName} />
+          <Route
+            exact
+            path="/club-events"
+            component={() => (
+              <EventPage events={events} active={1} auth={this.props.auth} />
+            )}
+          />
+          <Route
+            path="/department-events/:eventName"
+            component={EventWithName}
+          />
+          <Route path="/club-events/:eventName" component={EventWithName} />
           <Redirect to="/home" />
         </Switch>
       </div>

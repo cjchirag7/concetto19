@@ -74,6 +74,7 @@ class Home extends Component {
   componentDidMount() {
     this.props.hideLogo();
     window.scrollTo(0, 0);
+    console.log(window.innerWidth);
     // this.setState({ x: window.scrollY });
     window.addEventListener("scroll", this.handleScroll);
     if (window.innerHeight < 670) document.body.style.paddingBottom = "38vh";
@@ -191,7 +192,7 @@ class Home extends Component {
               return window.innerWidth > 800 ? (
                 <Parallax2 x={x} key={id.toString()} content={content} />
               ) : (
-                <Parallax x={x} id={id.toString()} content={content} />
+                <Parallax x={x} key={id.toString()} content={content} />
               );
           })}
         </div>

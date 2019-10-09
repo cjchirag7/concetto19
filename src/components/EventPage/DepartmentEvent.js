@@ -15,7 +15,7 @@ class DepatmentEvent extends Component {
             <div className="cards">
               <div className="card-item">
                 <Link
-                  to={`events/${event.name}`}
+                  to={`department-events/${event.name.split(" ").join("-")}`}
                   style={{ textDecoration: "none" }}
                 >
                   <div className="card-image">
