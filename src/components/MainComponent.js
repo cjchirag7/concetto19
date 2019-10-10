@@ -270,10 +270,44 @@ class Main extends Component {
             path="/department-events/:eventName/register"
             component={EventWithNameRegister}
           />
-          <Route path="/club-events/:eventName/about" component={EventWithNameAbout} />
-          <Route path="/club-events/:eventName/rules" component={EventWithNameRules} />
-          <Route path="/club-events/:eventName/details" component={EventWithNameDetails} />
-          <Route path="/club-events/:eventName/register" component={EventWithNameRegister} />
+          <Route
+            exact
+            path="/department-events/:eventName"
+            component={({ match }) => (
+              <Redirect
+                to={{
+                  pathname: `/department-events/${match.params.eventName}/about`
+                }}
+              />
+            )}
+          />
+          <Route
+            path="/club-events/:eventName/about"
+            component={EventWithNameAbout}
+          />
+          <Route
+            path="/club-events/:eventName/rules"
+            component={EventWithNameRules}
+          />
+          <Route
+            path="/club-events/:eventName/details"
+            component={EventWithNameDetails}
+          />
+          <Route
+            path="/club-events/:eventName/register"
+            component={EventWithNameRegister}
+          />
+          <Route
+            exact
+            path="/club-events/:eventName"
+            component={({ match }) => (
+              <Redirect
+                to={{
+                  pathname: `/club-events/${match.params.eventName}/about`
+                }}
+              />
+            )}
+          />
           <Redirect to="/home" />
         </Switch>
       </div>
