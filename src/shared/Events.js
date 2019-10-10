@@ -451,8 +451,8 @@ export const Events = [
     admins: [
       "Pranjal Shailraj - 7355913825",
       "Vaishnav Dixit - 9131464213",
-      "Aishani Aarya - 9835073163",
-      "Divya Srivastava - 6388505689"
+      "Malla Venkata Anirudh - 8885958404",
+      "Gupteswara Padhy - 6303873153"
     ],
     club: "",
     link: "https://forms.gle/vcUdcqsD9KuTEpvFA",

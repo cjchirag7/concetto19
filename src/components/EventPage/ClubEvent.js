@@ -14,9 +14,9 @@ class ClubEvent extends Component {
         {events.map((event, id) => {
           return (
             <div className="cards">
-              <div className="card-item" id={event.name}>
+              <div className="card-item" key={event.name}>
                 <Link
-                  to={`club-events/${event.name.split(" ").join("-")}`}
+                  to={`club-events/${event.name.split(" ").join("-")}/about`}
                   style={{ textDecoration: "none" }}
                 >
                   <div className="card-image">

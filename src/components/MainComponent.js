@@ -85,7 +85,7 @@ class Main extends Component {
 
   render() {
     const { events } = this.state;
-    const EventWithName = ({ match }) => {
+    const EventWithNameAbout = ({ match }) => {
       let selectedEvent = events.filter(
         event => event.name.split(" ").join("-") === match.params.eventName
       )[0];
@@ -93,7 +93,37 @@ class Main extends Component {
       if (selectedEvent === undefined) {
         return <ComingSoon />;
       }
-      return <EventDetail event={selectedEvent} />;
+      return <EventDetail event={selectedEvent} active={"about"} />;
+    };
+    const EventWithNameRules = ({ match }) => {
+      let selectedEvent = events.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"rules"} />;
+    };
+    const EventWithNameDetails = ({ match }) => {
+      let selectedEvent = events.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"details"} />;
+    };
+    const EventWithNameRegister = ({ match }) => {
+      let selectedEvent = events.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"register"} />;
     };
     const { preloader } = this.props;
     const { delayed } = this.state;
@@ -225,10 +255,25 @@ class Main extends Component {
             )}
           />
           <Route
-            path="/department-events/:eventName"
-            component={EventWithName}
+            path="/department-events/:eventName/about"
+            component={EventWithNameAbout}
           />
-          <Route path="/club-events/:eventName" component={EventWithName} />
+          <Route
+            path="/department-events/:eventName/rules"
+            component={EventWithNameRules}
+          />
+          <Route
+            path="/department-events/:eventName/details"
+            component={EventWithNameDetails}
+          />
+          <Route
+            path="/department-events/:eventName/register"
+            component={EventWithNameRegister}
+          />
+          <Route path="/club-events/:eventName/about" component={EventWithNameAbout} />
+          <Route path="/club-events/:eventName/rules" component={EventWithNameRules} />
+          <Route path="/club-events/:eventName/details" component={EventWithNameDetails} />
+          <Route path="/club-events/:eventName/register" component={EventWithNameRegister} />
           <Redirect to="/home" />
         </Switch>
       </div>

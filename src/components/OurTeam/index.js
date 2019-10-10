@@ -10,11 +10,15 @@ class OurTeam extends Component {
     this.state = {
       width: window.innerWidth
     };
+    this.devRef = React.createRef();
+    this.scrollToDevRef = this.scrollToDevRef.bind(this);
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
+  scrollToDevRef = () => window.scrollTo(0, this.devRef.current.offsetTop);
 
   render() {
     const { width } = this.state;
@@ -34,7 +38,11 @@ class OurTeam extends Component {
               CORE TEAM{" "}
             </a>
             |{" "}
-            <a href="#developers" className="title" style={{ color: "black" }}>
+            <a
+              className="title"
+              style={{ color: "black" }}
+              onClick={this.scrollToDevRef}
+            >
               {" "}
               DEVELOPERS
             </a>{" "}
@@ -75,7 +83,7 @@ class OurTeam extends Component {
               </div>
             ))}
           </div>
-          <div class="row mt-4" id="developers">
+          <div class="row mt-4" ref={this.devRef}>
             {DeveloperTeam.map(person => (
               <div class="col-sm-6 col-lg-3 my-auto" id={person.name}>
                 <div class="box shadow-sm p-4">

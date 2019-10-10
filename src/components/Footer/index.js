@@ -5,6 +5,7 @@ import {
   faInstagram,
   faWhatsapp
 } from "@fortawesome/free-brands-svg-icons";
+import { Tooltip } from "reactstrap";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -49,6 +50,19 @@ const styles = theme => ({
   }
 });
 class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      tooltipOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      tooltipOpen: !this.state.tooltipOpen
+    });
+  }
   render() {
     const { classes } = this.props;
     return (
@@ -69,13 +83,22 @@ class Footer extends React.Component {
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a>
         <a
-          href="https://concetto-front.s3.ap-south-1.amazonaws.com/map-89+final2-min.png"
+          href={window.location.origin + "/images/CAMPUS-MAP.jpg"}
           target="_blank"
           rel="noopener noreferrer"
           className={classes.a}
+          id="map-icon"
         >
-         <i className="fa fa-map"></i>
-          </a>
+          <i className="fa fa-map"></i>
+        </a>
+        <Tooltip
+          placement="right"
+          isOpen={this.state.tooltipOpen}
+          target="map-icon"
+          toggle={this.toggle}
+        >
+          View Campus Map
+        </Tooltip>
       </div>
     );
   }

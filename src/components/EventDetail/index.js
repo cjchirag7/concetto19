@@ -10,6 +10,7 @@ import Mobileview from "./Mobileview";
 import Header from "../Header/index";
 import HomeHeader from "../HomeHeader/index";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   verticalTab: {
@@ -42,44 +43,13 @@ const styles = theme => ({
 });
 
 class EventDetail extends Component {
-  constructor(props) {
-    super(props);
-    this.aboutShow = this.aboutShow.bind(this);
-    this.rulesShow = this.rulesShow.bind(this);
-    this.detailsShow = this.detailsShow.bind(this);
-    this.registerShow = this.registerShow.bind(this);
-  }
-  state = {
-    active: "about"
-  };
 
-  aboutShow = active => {
-    this.setState({
-      active: "about"
-    });
-  };
-  rulesShow = active => {
-    this.setState({
-      active: "rules"
-    });
-  };
-  detailsShow = active => {
-    this.setState({
-      active: "details"
-    });
-  };
-  registerShow = active => {
-    this.setState({
-      active: "register"
-    });
-  };
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
   render() {
-    const { classes } = this.props;
-    const { event } = this.props;
+    const { classes, active, event } = this.props;
     return (
       <div style={{ display: "flex" }}>
         <div className={classes.verticalTab}>
@@ -93,42 +63,46 @@ class EventDetail extends Component {
             </NavLink>
           </div>
           <div className="btnFlex">
+            <Link to ="about">
             <button
               className={
                 "btn btn-event btn-2 " +
-                (this.state.active === "about" ? "active-bottom" : "")
+                (active === "about" ? "active-bottom" : "")
               }
-              onClick={this.aboutShow}
             >
               ABOUT
             </button>
+            </Link>
+            <Link to ="rules">
             <button
               className={
                 "btn btn-event btn-2 " +
-                (this.state.active === "rules" ? "active-bottom" : "")
+                (active === "rules" ? "active-bottom" : "")
               }
-              onClick={this.rulesShow}
             >
               RULES
             </button>
+            </Link>
+            <Link to ="details">
             <button
               className={
                 "btn btn-event btn-2 " +
-                (this.state.active === "details" ? "active-bottom" : "")
+                (active === "details" ? "active-bottom" : "")
               }
-              onClick={this.detailsShow}
             >
               DETAILS
             </button>
+            </Link>
+            <Link to="register">
             <button
               className={
                 "btn btn-event btn-2 " +
-                (this.state.active === "register" ? "active-bottom" : "")
+                (active === "register" ? "active-bottom" : "")
               }
-              onClick={this.registerShow}
             >
               REGISTER
             </button>
+            </Link>
           </div>
         </div>
         {window.innerWidth < 960 ? <Header /> : <HomeHeader />}
@@ -145,16 +119,16 @@ class EventDetail extends Component {
             {event.name}
           </div>
           <div className={classes.desktopView}>
-            {this.state.active === "about" && (
+            {active === "about" && (
               <About event={this.props.event} />
             )}
-            {this.state.active === "rules" && (
+            {active === "rules" && (
               <Rules event={this.props.event} />
             )}
-            {this.state.active === "details" && (
+            {active === "details" && (
               <Details event={this.props.event} />
             )}
-            {this.state.active === "register" && (
+            {active === "register" && (
               <Register event={this.props.event} />
             )}
           </div>
