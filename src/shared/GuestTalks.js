@@ -11,6 +11,17 @@ export const GuestTalks = [
     link: "https://solarsystem1.jpl.nasa.gov/ssa/biography.cfm?US_ID=1877"
   },
   {
+    guest: "DHARVENDRA YADAV",
+    designation: "Team Member of Chandrayaan-II Mission ",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/GuestTalks/dharvendra.jpg",
+    about:
+      "Mr. Dharvendra Yadav has graduated with Bachelor of Technology in Electronics and Communication Engineering. He has also completed his post graduation in Radio Frequency and Microwave. Currently, he is a part of Indian Space Research Organization (ISRO) with the tean of RF and Microwave circuit design and testing and satellite ground station design and establishment. He had followed the recent most ambitious mission of ISRO, Chandrayan 2.; Having started from a humble background and being a part of the elite space research group of the nation, it is a journey that can inspire millions. He is currently stationed at Alcantara, Maranhao, Brazil observatory facility of National Institute for Space Research along with his colleague. He was responsible for providing the Chandrayan II with health related data, navigation data for its orbit predictions and tele commanding to the spacecraft for guiding the Chandrayan mission.;His guest lecture would share some of the lesser known facts about the mission that made India and the whole world proud,Chandrayan 2. Concetto feels grateful to have the opportunity to interact with Mr. Dharvendra Yadav ",
+    time: "19th October",
+    place: "",
+    link: "https://www.linkedin.com/in/dharvendra-yadav-b5252192/"
+  },
+  {
     guest: "SANDEEP JAIN",
     designation: "CEO of GeeksForGeeks",
     img:

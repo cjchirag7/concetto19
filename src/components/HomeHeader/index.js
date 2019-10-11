@@ -63,10 +63,10 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
-                  to="/about-theme"
+                  to="/about-us"
                   onClick={this.toggleMenu}
                 >
-                  ABOUT THEME
+                  ABOUT US
                 </NavLink>
               </li>
               <li>
@@ -81,10 +81,19 @@ class Header extends Component {
               <li>
                 <NavLink
                   className="nav-link"
+                  to="/club-events"
+                  onClick={this.toggleMenu}
+                >
+                  CLUB EVENTS
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link"
                   to="/department-events"
                   onClick={this.toggleMenu}
                 >
-                  EVENTS
+                  DEPARTMENTAL EVENTS
                 </NavLink>
               </li>
               <li>

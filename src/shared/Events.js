@@ -152,6 +152,33 @@ export const Events = [
     pdf: "https://drive.google.com/open?id=1vXo-SZxxhBY_SreBjx8c2TfNndlOHs4P"
   },
   {
+    name: "PIYUSH DUTTA INNOVATION AND INVENTION PRIZE",
+    is_team: 0,
+    max_participants: 1,
+    dept: "",
+    description:
+      "The entire idea of concetto is to give to our future entrepreneurs, a platform, for them to gain self-confidence and attention. We at Concetto, also believe in the idea that 'talent must be rewarded', for it encourages the students to achieve their future endeavors. In resonance with the idea, Concetto'19 in association with Centre for Innovation Incubation and Entrepreneurship, IIT ISM Dhanbad  presents 'Piyush Dutta Innovation and Invention Prize' worth $1500 only for undergraduate Final year students of IIT (ISM) Dhanbad.",
+    is_club: 1,
+    about: "",
+    rules:
+      "Award to be given annually to one final year undergraduate student or jointly to final year undergraduate students If such a selection is made.; Award is open to final year undergraduate students of all departments within IIT (ISM).; The award is initially set for a total amount of $1500 (Rs 1 Lakh monetary prize and a plaque) per year.The prize amount may be changed in the future at the sole discretion of PKD.",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/PIYUSH+DUTTA+PRIZE.webp",
+    prizes: "",
+    fee: 0,
+    start: "",
+    end: "",
+    scores: {
+      first: 50,
+      second: 30,
+      third: 10
+    },
+    admins: ["Shashwat Raj - 7903592830", "Shubham Raj - 7277774644"],
+    club: "CIIE",
+    link: "",
+    pdf: "https://drive.google.com/open?id=1vH6znjty9BV4fZRnG5SBL9z-TUxIKpko"
+  },
+  {
     name: "CodeYaan 1.0",
     is_team: 0,
     max_participants: 1,

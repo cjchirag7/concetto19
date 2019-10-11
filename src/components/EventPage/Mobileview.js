@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
+import { Link } from "react-router-dom";
 import DepartmentEvent from "./DepartmentEvent";
 import ClubEvent from "./ClubEvent";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import AppBar from "@material-ui/core/AppBar";
 import Header from "../Header";
+// import { NavLink } from "reactstrap";
 
 const styles = theme => ({
   mobileTab: {
@@ -47,17 +49,17 @@ const styles = theme => ({
 class EventDetail extends Component {
   constructor(props) {
     super(props);
-    const { events } = props;
+    const { events, active } = props;
     // this.departmentShow = this.departmentShow.bind(this);
     // this.clubShow = this.clubShow.bind(this);
     this.state = {
-      active: 0,
+      active: active,
       departmental: events.filter(event => event.is_club === 0),
       clubEvents: events.filter(event => event.is_club === 1)
     };
     // this.departmentShow = this.departmentShow.bind(this);
     // this.clubShow = this.clubShow.bind(this);
-    this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
   }
 
   // clubShow = () => {
@@ -73,9 +75,16 @@ class EventDetail extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-  handleChange = (event, active) => {
-    this.setState({ active: active });
-  };
+  // handleChange = (event, active) => {
+  //   console.log(active);
+  //   return (
+  //     <Redirect
+  //       to={{
+  //         pathname: `/${active === 0 ? "department-events" : "club-events"}`
+  //       }}
+  //     />
+  //   );
+  // };
 
   render() {
     const { classes } = this.props;
@@ -95,7 +104,7 @@ class EventDetail extends Component {
           </Tab>
           <Tabs
             value={this.state.active}
-            onChange={this.handleChange}
+            // onChange={this.handleChange}
             indicatorColor="#666666"
             textColor="secondary"
             className={classes.tab}
@@ -104,10 +113,14 @@ class EventDetail extends Component {
               label="Department"
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
               // onClick={this.departmentShow}
+              component={Link}
+              to="department-events"
             />
             <Tab
               label="Club"
               classes={{ root: classes.tabRoot, selected: classes.tabSelected }}
+              component={Link}
+              to="club-events"
               // onClick={this.clubShow}
             />
           </Tabs>

@@ -53,7 +53,7 @@ class EventDetail extends Component {
       <div style={{ display: "flex" }}>
         <div className={classes.verticalTab}>
           <div>
-            <NavLink to="../home">
+            <NavLink to="home">
               <img
                 src={
                   "https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"

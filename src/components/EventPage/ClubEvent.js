@@ -33,7 +33,7 @@ class ClubEvent extends Component {
                   <div className="card-image">
                     <img
                       src={`${event.img}`}
-                      alt="Loading..."
+                      alt={event.name}
                       className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
                       width="500"
                       height="500"

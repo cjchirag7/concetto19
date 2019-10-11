@@ -1,6 +1,6 @@
 export const HomeContent = [
   {
-    link: "about-theme",
+    link: "about-us",
     heading: "ABOUT US",
     image1: "https://concetto-front.s3.ap-south-1.amazonaws.com/about1.jpg",
     image2: "https://concetto-front.s3.ap-south-1.amazonaws.com/about2.jpg",

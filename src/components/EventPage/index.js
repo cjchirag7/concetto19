@@ -95,7 +95,11 @@ class EventDetail extends Component {
             {active === 0 && <DepartmentEvent events={departmental} />}
             {active === 1 && <ClubEvent events={clubEvents} />}
           </div>
-          {window.innerWidth < 960 ? <Mobileview events={events} /> : ""}
+          {window.innerWidth < 960 ? (
+            <Mobileview events={events} active={active} />
+          ) : (
+            ""
+          )}
         </div>
       </div>
     );

@@ -78,7 +78,7 @@ class OurTeam extends Component {
               <div class="col-sm-6 col-lg-3 my-auto" id={person.name}>
                 <div class="box shadow-sm p-4">
                   <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src={person.pic} alt={"Loading.."} />
+                    <img class="img-fluid" src={person.pic} alt={person.name} />
                   </div>
                   <div class="box-desc">
                     <h5>{person.name}</h5>
@@ -100,7 +100,7 @@ class OurTeam extends Component {
               <div class="col-sm-6 col-lg-3 my-auto" id={person.name}>
                 <div class="box shadow-sm p-4">
                   <div class="image-wrapper mb-3">
-                    <img class="img-fluid" src={person.pic} alt="Loading..." />
+                    <img class="img-fluid" src={person.pic} alt={person.name} />
                   </div>
                   <div class="box-desc">
                     <h5>{person.name}</h5>

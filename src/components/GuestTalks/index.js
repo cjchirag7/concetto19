@@ -56,7 +56,7 @@ class GuestTalk extends Component {
                   preserveAspectRatio="xMidYMid slice"
                   focusable="false"
                   aria-label="Placeholder: 350x350"
-                  alt="Loading..."
+                  alt={talk.guest}
                 />
               </div>
               <div

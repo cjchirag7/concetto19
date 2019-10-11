@@ -56,6 +56,20 @@ export const CoreTeam = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/PulkitSingh.jpg",
     phone: "9546392727"
   },
+  {
+    name: "Parth Hetamsaria",
+    post: "Finance Head",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/ParthHetamsaria.jpg",
+    phone: "7209170501"
+  },
+  {
+    name: "Bharadwaj Donthula",
+    post: "Designing Head",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/BharadwajDonthula.jpg",
+    phone: "9392427427"
+  },
   // {
   //   name: "Vislavath Shirisha",
   //   post: "Exhibition Coordinator",
@@ -85,13 +99,6 @@ export const CoreTeam = [
     phone: "9425725040"
   },
   {
-    name: "Bharadwaj Donthula",
-    post: "Graphics Designing",
-    pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/BharadwajDonthula.jpg",
-    phone: "9392427427"
-  },
-  {
     name: "Perul Jain",
     post: "Technical Team",
     pic:
@@ -104,6 +111,20 @@ export const CoreTeam = [
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Pushpendra.jpeg",
     phone: "8239310248"
+  },
+  {
+    name: "Laraibzemam A Ansari",
+    post: "Promotion Team",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Iarib.jpg",
+    phone: "7470268955"
+  },
+  {
+    name: "Rajshekhar Dutta Choudhury",
+    post: "Promotion Team",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/RD_choudhary.jpg",
+    phone: "7002100742"
   },
   {
     name: "Ravindra Singh Mangoliya",
@@ -135,7 +156,7 @@ export const CoreTeam = [
   },
   {
     name: "Avtar Arora",
-    post: "Sponsorship & Security Team",
+    post: "Security Team",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/AvtarArora.jpg",
     phone: "8193814303"
@@ -186,15 +207,8 @@ export const CoreTeam = [
     name: "Neelabh Krishna",
     post: "Finance Team",
     pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/NeelabhKrishna.jpg",
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Neelabh-Krishna.jpg",
     phone: "7070774751"
-  },
-  {
-    name: "Parth Hetamsaria",
-    post: "Finance Team",
-    pic:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/ParthHetamsaria.jpg",
-    phone: "7209170501"
   },
   {
     name: "Sai Vishal S",

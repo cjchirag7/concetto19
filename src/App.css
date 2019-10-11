@@ -166,12 +166,13 @@ html,body{
   color: white;
   transition: all 0.3s ease-in-out;
   font-size: 1.75rem;
+  padding: 5px;
 }
 
 .nav-link:hover
 {
   color: gold;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.27em;
 }
 
 @media (max-height: 600px) {

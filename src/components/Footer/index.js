@@ -83,22 +83,24 @@ class Footer extends React.Component {
           <FontAwesomeIcon icon={faWhatsapp} className={classes.whatsapp} />
         </a>
         <a
-          href={window.location.origin + "/images/CAMPUS-MAP.jpg"}
+          href={
+            "https://play.google.com/store/apps/details?id=com.rishabh.concetto2019"
+          }
           target="_blank"
           rel="noopener noreferrer"
           className={classes.a}
-          id="map-icon"
+          id="app-icon"
         >
-          <i className="fa fa-map"></i>
+          <i className="fa fa-play"></i>
         </a>
-        <Tooltip
+        {/* <Tooltip
           placement="right"
           isOpen={this.state.tooltipOpen}
           target="map-icon"
           toggle={this.toggle}
         >
           View Campus Map
-        </Tooltip>
+        </Tooltip> */}
       </div>
     );
   }
