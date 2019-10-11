@@ -16,7 +16,7 @@ export const Workshop_list = [
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/bizathon.jpg",
     details:
-      "Bizathon is a 2-day managerial fiesta conducted by E-Cell IIT(ISM) Dhanbad in Concetto (18-20th October’19) , the Techno - Management fest of IIT(ISM) Dhanbad.Bizathon gives opportunity to innovators, creators and thinkers to learn, innovate design and develop a prototype of the product.; A one or two day long workshop will be conducted on business modelling in which speaker will give an overview of business plan development, financial projection and estimations, covering the crucial domains of preparation and execution of a business model. Participants will learn how to prepare a business model canvas for their idea and will be exposed to numerous real life difficulties faced during the budding stages of a startup.",
+      "A one day workshop on business modelling, basic financial projection and estimation, will cover the cruial domains of preparation and execution of a business model is going to take place on 18th october under bizathon from 10AM to 6PM including 2 hours breaks by Mridul kabra, seasoned digital marketing professional, TEDx speaker having 7 years marketing, management and entrepreneurial experience. ;Registration fees for this entrepreneurial excursion is Rs. 400 per student.",
     reg_link:
       "https://docs.google.com/forms/d/1_m-Zw_YtvhIOSvxGm8rsqh0dAnq9nZKrQy2F6nZCWys/viewform"
   },
@@ -27,7 +27,7 @@ export const Workshop_list = [
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/cyberlabs.jpg",
     details:
-      "Hacking is a thing that acquires the attention of every single person who is interested in technology and its advancements. We, Concetto’19 brings to you the most awaited workshop about ethical hacking in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. It will have 10 sessions in which various hacking processes and its terminologies will be taught",
+      "Hacking is a thing that acquires the attention of every single person who is interested in technology and its advancements. We, Concetto’19 brings to you the most awaited workshop about ethical hacking in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650 . It will have 10 sessions in which various hacking processes and its terminologies will be taught",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
   },
   {
@@ -36,7 +36,7 @@ export const Workshop_list = [
       "https://drive.google.com/file/d/1J8nV-jwSAwwg_gryinQrKSk0QFROYMIu/view?usp=sharing",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ml-workshop.jpg",
     details:
-      "Artificial intelligence and machine learning has also been on the peek of human interest, so Concetto’19 brings to you a workshop on AI and ML using python in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. The workshop will have various topics covered in the sessions",
+      "Artificial intelligence and machine learning has also been on the peek of human interest, so Concetto’19 brings to you a workshop on AI and ML using python in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650 . The workshop will have various topics covered in the sessions",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
   },
   {
@@ -45,7 +45,7 @@ export const Workshop_list = [
       "https://drive.google.com/file/d/1PShYak1A1kQwjh-mlYOBZW0qdjP39zU8/view?usp=sharing",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop2.jpg",
     details:
-      "Concetto’19 brings to you a workshop on ‘Internet of Things’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. Internet of Things (IoT) is an ecosystem of connected physical things that are accessible through the internet. The 'Thing' in IoT could be a person with a heart monitor or an automobile with built-in-sensors, i.e. objects that have been assigned an IP address and could collect and transfer data over a network without manual intervention. The embedded devices in the objects helps them to interact with internal states or the external environment, which in turn used for remote monitoring and control purpose and affects the decisions taken. ",
+      "Concetto’19 brings to you a workshop on ‘Internet of Things’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650 . Internet of Things (IoT) is an ecosystem of connected physical things that are accessible through the internet. The 'Thing' in IoT could be a person with a heart monitor or an automobile with built-in-sensors, i.e. objects that have been assigned an IP address and could collect and transfer data over a network without manual intervention. The embedded devices in the objects helps them to interact with internal states or the external environment, which in turn used for remote monitoring and control purpose and affects the decisions taken. ",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
   },
   {
@@ -54,7 +54,7 @@ export const Workshop_list = [
       "https://drive.google.com/file/d/11_c0CE8d0Y9vCNuXPRGhTY5iNF-Bgzu9/view?usp=sharing",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/exhibition2.jpg",
     details:
-      "Robots are the center of attention for everyone, how intelligent and useful they can be, has always been interesting. Concetto’19 brings to you a workshop on ‘HUMANOID ROBOTICS’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of 650 rupees. Projects like PWM Generation, Servo Interfacing, Angle Calculation, No, Namaste, Walking (Forward, Back, Left, Right & Back), Dancing Robot will be covered in the workshop ",
+      "Robots are the center of attention for everyone, how intelligent and useful they can be, has always been interesting. Concetto’19 brings to you a workshop on ‘HUMANOID ROBOTICS’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650. Projects like PWM Generation, Servo Interfacing, Angle Calculation, No, Namaste, Walking (Forward, Back, Left, Right & Back), Dancing Robot will be covered in the workshop ",
     reg_link: "https://forms.gle/9BiTMNkahEQMJjqX6"
   }
 ];

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { GuestTalks } from "../../shared/GuestTalks";
 import Header from "../Header";
 import "./styles.css";
+import { Helmet } from "react-helmet";
 
 class GuestTalk extends Component {
   componentDidMount() {
@@ -11,6 +12,17 @@ class GuestTalk extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Concetto Guest-Talks</title>
+          <meta
+            name="description"
+            content="Concetto, the annual Techno-management fest of IIT(ISM), organizes a variety of workshops with the best in the business so that our participants feel lucid while competing with technical brilliance. Meet the guest coming for tech talks, here"
+          />
+          <meta
+            name="keywords"
+            content="Geeks-for-Geeks iit dhanbad, NASA iit dhanbad, NASA ism dhanbad, Chandrayan 2 iit ism, Chandrayan 2 iit dhanbad, Geeks-for-Geeks ism dhanbad, Geeks-for-Geeks iit ism, NASA iit ism, iit ism dhanbad techfest, iit dhanbad techfest, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          />
+        </Helmet>
         <Header />
         <br />
         <h1

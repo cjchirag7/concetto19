@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import "./styles.css";
+import { Helmet } from "react-helmet";
 
 class AboutTheme extends Component {
   componentDidMount() {
@@ -10,6 +11,17 @@ class AboutTheme extends Component {
   render() {
     return (
       <div className="theme-page">
+        <Helmet>
+          <title>Concetto</title>
+          <meta
+            name="description"
+            content="Concetto is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes. Know about the theme of this year - To the moon and back."
+          />
+          <meta
+            name="keywords"
+            content="to the moon and back, iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto theme, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          />
+        </Helmet>
         <Header />
         <br />
         <h1
@@ -36,13 +48,13 @@ class AboutTheme extends Component {
           steps into a frontier that will never end. Ten years ago the Moon was
           an inspiration to poets and an opportunity for lovers. Ten years from
           now it will be just another airport. In a world full of complexity and
-          chaos, CONCETTO’19 endeavours to bring along all of you and rejuvenate
-          you with extreme joviality and buoyancy. With the aim of providing a
-          platform for the tech enthusiast students to develop and showcase
-          their technical prowess, CONCETTO is the ideal destination for all
-          technophiles. Boasting of a huge roaster of exhilarating and engaging
-          events, along with promises to be grander, greater, more splendid and
-          glorious than ever before IIT ISM presenting{" "}
+          chaos, CONCETTO’19 endeavours to bring along all of you and
+          rejuvenate you with extreme joviality and buoyancy. With the aim of
+          providing a platform for the tech enthusiast students to develop and
+          showcase their technical prowess, CONCETTO is the ideal destination
+          for all technophiles. Boasting of a huge roaster of exhilarating and
+          engaging events, along with promises to be grander, greater, more
+          splendid and glorious than ever before IIT ISM presenting{" "}
           <b>CONCETTO: To The Moon And Back </b>.
         </div>
       </div>

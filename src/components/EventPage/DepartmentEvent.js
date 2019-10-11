@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 class DepartmentEvent extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -9,6 +9,17 @@ class DepartmentEvent extends Component {
     const { events } = this.props;
     return (
       <div className="container">
+        <Helmet>
+          <title>Concetto departmental events</title>
+          <meta
+            name="description"
+            content="Organized by the Departments of IIT (ISM) Dhanbad, these events prove to be a different kind of challenge for the participants. Along with sound technical knowledge, they also check your proficiency in various fields of engineering. They make you think out of the box in problems associated with the respective fields."
+          />
+          <meta
+            name="keywords"
+            content="departmental events concetto 2019, department events, branch events iit ism, iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto theme, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          />
+        </Helmet>
         <br />
         {events.map((event, id) => {
           return (

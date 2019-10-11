@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import { Workshop_list } from "../../shared/Workshops";
-
+import { Helmet } from "react-helmet";
 class Workshops extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -10,6 +10,17 @@ class Workshops extends Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>Concetto Workshops</title>
+          <meta
+            name="description"
+            content="Concetto, the annual Techno-management fest of IIT(ISM), organizes a variety of workshops with the best in the business so that our participants feel lucid while competing with technical brilliance."
+          />
+          <meta
+            name="keywords"
+            content="iit ism dhanbad techfest, iit dhanbad techfest, iit dhanbad workshops, Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM, Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          />
+        </Helmet>
         <Header />
         <br />
         <h1

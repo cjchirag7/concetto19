@@ -9,6 +9,8 @@ import Parallax2 from "../parallax2";
 import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../shared/Content";
 import "./styles.css";
+import { Helmet } from "react-helmet";
+
 let max_offset, initial_offset;
 
 const styles = theme => ({
@@ -150,6 +152,17 @@ class Home extends Component {
     const { offset, x } = this.state;
     return (
       <div>
+        <Helmet>
+          <title>Concetto</title>
+          <meta
+            name="description"
+            content="Concetto is one of the largest Techno-management fest of IIT (ISM) Dhanbad in Eastern India with a massive participation of more than 2000 participants from 300 different colleges and institutes, who stalk the grounds of ISM to prove their technical expertise."
+          />
+          <meta
+            name="keywords"
+            content="iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM,Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+          />
+        </Helmet>
         <section id="scroll_down" className="demo">
           <a
             onClick={() => {
