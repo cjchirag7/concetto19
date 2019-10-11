@@ -43,7 +43,6 @@ const styles = theme => ({
 });
 
 class EventDetail extends Component {
-
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -56,52 +55,54 @@ class EventDetail extends Component {
           <div>
             <NavLink to="../home">
               <img
-                src={window.location.origin + "/images/logo.png"}
+                src={
+                  "https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"
+                }
                 className="img-fluid"
-                alt={"Loading.."}
+                alt={" "}
               />
             </NavLink>
           </div>
           <div className="btnFlex">
-            <Link to ="about">
-            <button
-              className={
-                "btn btn-event btn-2 " +
-                (active === "about" ? "active-bottom" : "")
-              }
-            >
-              ABOUT
-            </button>
+            <Link to="about">
+              <button
+                className={
+                  "btn btn-event btn-2 " +
+                  (active === "about" ? "active-bottom" : "")
+                }
+              >
+                ABOUT
+              </button>
             </Link>
-            <Link to ="rules">
-            <button
-              className={
-                "btn btn-event btn-2 " +
-                (active === "rules" ? "active-bottom" : "")
-              }
-            >
-              RULES
-            </button>
+            <Link to="rules">
+              <button
+                className={
+                  "btn btn-event btn-2 " +
+                  (active === "rules" ? "active-bottom" : "")
+                }
+              >
+                RULES
+              </button>
             </Link>
-            <Link to ="details">
-            <button
-              className={
-                "btn btn-event btn-2 " +
-                (active === "details" ? "active-bottom" : "")
-              }
-            >
-              DETAILS
-            </button>
+            <Link to="details">
+              <button
+                className={
+                  "btn btn-event btn-2 " +
+                  (active === "details" ? "active-bottom" : "")
+                }
+              >
+                DETAILS
+              </button>
             </Link>
             <Link to="register">
-            <button
-              className={
-                "btn btn-event btn-2 " +
-                (active === "register" ? "active-bottom" : "")
-              }
-            >
-              REGISTER
-            </button>
+              <button
+                className={
+                  "btn btn-event btn-2 " +
+                  (active === "register" ? "active-bottom" : "")
+                }
+              >
+                REGISTER
+              </button>
             </Link>
           </div>
         </div>
@@ -119,18 +120,10 @@ class EventDetail extends Component {
             {event.name}
           </div>
           <div className={classes.desktopView}>
-            {active === "about" && (
-              <About event={this.props.event} />
-            )}
-            {active === "rules" && (
-              <Rules event={this.props.event} />
-            )}
-            {active === "details" && (
-              <Details event={this.props.event} />
-            )}
-            {active === "register" && (
-              <Register event={this.props.event} />
-            )}
+            {active === "about" && <About event={this.props.event} />}
+            {active === "rules" && <Rules event={this.props.event} />}
+            {active === "details" && <Details event={this.props.event} />}
+            {active === "register" && <Register event={this.props.event} />}
           </div>
           <div>
             {window.innerWidth < 960 ? <Mobileview event={event} /> : ""}

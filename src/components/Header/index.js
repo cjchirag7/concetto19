@@ -27,7 +27,7 @@ class Header extends Component {
             <a className="navbar-brand">
               <span className="helper"></span>
               <img
-                src={window.location.origin + "/images/logo.png"}
+                src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"
                 className="logo-header"
                 alt={"CONCETTO"}
               />

@@ -27,7 +27,7 @@ class Header extends Component {
       <div
         className="header fixed-top"
         style={
-          window.innerWidth < 800
+          window.innerWidth < 800 && window.pageYOffset > window.innerHeight
             ? { backgroundColor: "rgba(0, 0, 0, 0.5)" }
             : null
         }

@@ -3,7 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import "../EventDetail/Styles.css";
 // import Loading from "../Loading";
 import DepartmentEvent from "./DepartmentEvent";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import ClubEvent from "./ClubEvent";
 import Mobileview from "./Mobileview";
 import HomeHeader from "../HomeHeader";
@@ -60,41 +60,39 @@ class EventDetail extends Component {
             <div>
               <NavLink to="home" exact strict>
                 <img
-                  src="/images/logo.png"
+                  src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"
                   className="img-fluid"
-                  alt={"Loading"}
+                  alt={" "}
                 />
               </NavLink>
             </div>
             <div className="btnFlex">
               <Link to="department-events">
-              <button
-                className={
-                  "btn btn-event btn-2 " +
-                  (active === 0 ? "active-bottom" : "")
-                }
-                onClick={this.departmentShow}
-              >
-                DEPARTMENT
-              </button>
+                <button
+                  className={
+                    "btn btn-event btn-2 " +
+                    (active === 0 ? "active-bottom" : "")
+                  }
+                  onClick={this.departmentShow}
+                >
+                  DEPARTMENT
+                </button>
               </Link>
-              <Link to ="club-events">
-              <button
-                className={
-                  "btn btn-event btn-2 " +
-                  (active === 1 ? "active-bottom" : "")
-                }
-              >
-                CLUB
-              </button>
+              <Link to="club-events">
+                <button
+                  className={
+                    "btn btn-event btn-2 " +
+                    (active === 1 ? "active-bottom" : "")
+                  }
+                >
+                  CLUB
+                </button>
               </Link>
             </div>
           </div>
           <br />
           <div className={classes.eventsCard}>
-            {active === 0 && (
-              <DepartmentEvent events={departmental} />
-            )}
+            {active === 0 && <DepartmentEvent events={departmental} />}
             {active === 1 && <ClubEvent events={clubEvents} />}
           </div>
           {window.innerWidth < 960 ? <Mobileview events={events} /> : ""}

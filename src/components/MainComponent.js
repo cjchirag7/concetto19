@@ -45,8 +45,8 @@ class Main extends Component {
     super(props);
     this.state = {
       header: false,
-      preloader: true,
-      delayed: false,
+      // preloader: true,
+      // delayed: false,
       events: Events
     };
     this.makeShowLogo = this.makeShowLogo.bind(this);
@@ -125,8 +125,8 @@ class Main extends Component {
       }
       return <EventDetail event={selectedEvent} active={"register"} />;
     };
-    const { preloader } = this.props;
-    const { delayed } = this.state;
+    // const { preloader } = this.props;
+    // const { delayed } = this.state;
     // if (preloader && !delayed) {
     //   return <div>Loading .........</div>;
     // }
@@ -212,6 +212,7 @@ class Main extends Component {
           registerUser={this.props.registerUser}
         /> */}
         <Switch location={this.props.location}>
+          zz{" "}
           <Route
             exact
             path="/home"
@@ -219,7 +220,6 @@ class Main extends Component {
               <Home makeShowLogo={this.makeShowLogo} hideLogo={this.hideLogo} />
             )}
           />
-
           {/* <Route
             exact
             path="/events/eventDetail"

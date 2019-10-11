@@ -29,8 +29,8 @@ const styles = theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.down('sm')]:{
-      marginTop: '0px'
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "0px"
     }
   },
   moon: {
@@ -164,10 +164,10 @@ class Home extends Component {
         <HomeHeader></HomeHeader>
         <div className={classes.logo}>
           <img
-            src="images/logo.png"
+            src="https://concetto-front.s3.ap-south-1.amazonaws.com/logo.webp"
             className={`logo logo-home`}
             ref={this.homeRef}
-            alt={"Loading.."}
+            alt={" "}
           />
         </div>
         {
@@ -183,14 +183,14 @@ class Home extends Component {
               src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.png"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
-              alt="moon"
+              alt=" "
               style={{ transform: "translateY(" + offset + "vh)" }}
             />
           </div>
         }
         <div className={classes.parallax}>
           {HomeContent.map((content, id) => {
-            if(window.innerWidth<992)
+            if (window.innerWidth < 992)
               return <ParallaxM key={id.toString()} content={content} />;
             else if (id % 2 === 0)
               return <Parallax x={x} key={id.toString()} content={content} />;
