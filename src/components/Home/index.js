@@ -180,7 +180,7 @@ class Home extends Component {
             }}
           >
             <img
-              src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.png"
+              src="https://concetto-front.s3.ap-south-1.amazonaws.com/moon_surface.webp"
               // src={window.location.origin + "/images/moon-fin.png"}
               className={classes.moon}
               alt=" "

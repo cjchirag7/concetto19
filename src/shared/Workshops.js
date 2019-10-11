@@ -10,6 +10,17 @@ export const Workshop_list = [
       "https://docs.google.com/forms/d/e/1FAIpQLSePuP1VVHvn4FDNqFPHGeuT0xeQDg17gR8DMGk4vUKPpim58g/viewform"
   },
   {
+    name: "Bizathon",
+    link:
+      "https://drive.google.com/file/d/1T8oZb9PC8VHpeiEW28HFLHYIPUs29QNa/view?usp=sharing",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/events/bizathon.jpg",
+    details:
+      "Bizathon is a 2-day managerial fiesta conducted by E-Cell IIT(ISM) Dhanbad in Concetto (18-20th October’19) , the Techno - Management fest of IIT(ISM) Dhanbad.Bizathon gives opportunity to innovators, creators and thinkers to learn, innovate design and develop a prototype of the product.; A one or two day long workshop will be conducted on business modelling in which speaker will give an overview of business plan development, financial projection and estimations, covering the crucial domains of preparation and execution of a business model. Participants will learn how to prepare a business model canvas for their idea and will be exposed to numerous real life difficulties faced during the budding stages of a startup.",
+    reg_link:
+      "https://docs.google.com/forms/d/1_m-Zw_YtvhIOSvxGm8rsqh0dAnq9nZKrQy2F6nZCWys/viewform"
+  },
+  {
     name: "Cyber Security and Ethical Hacking",
     link:
       "https://drive.google.com/file/d/1MLdCddM7q1Lupvjt5LNyb7qGZyV41oIZ/view?usp=sharing",

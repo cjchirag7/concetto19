@@ -16,9 +16,13 @@ class Header extends Component {
     if (!isMenuOpen) {
       window.scrollBy(0, window.innerHeight / 10 + 1);
       document.body.style.overflow = "hidden";
+      // document.body.style.position = "fixed";
+      document.body.style.touchAction = "none";
     } else {
       window.scrollBy(0, -window.innerHeight / 10 - 1);
       document.body.style.overflowY = "scroll";
+      // document.body.style.position = "relative";
+      document.body.style.touchAction = "auto";
     }
   }
   render() {

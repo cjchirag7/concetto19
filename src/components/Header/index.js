@@ -12,8 +12,15 @@ class Header extends Component {
   toggleMenu() {
     const { isMenuOpen } = this.state;
     this.setState({ isMenuOpen: !isMenuOpen });
-    if (!isMenuOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflowY = "scroll";
+    if (!isMenuOpen) {
+      document.body.style.overflow = "hidden";
+      // document.body.style.position = "fixed";
+      document.body.style.touchAction = "none";
+    } else {
+      document.body.style.overflowY = "scroll";
+      // document.body.style.position = "relative";
+      document.body.style.touchAction = "auto";
+    }
   }
   render() {
     const { isMenuOpen } = this.state;

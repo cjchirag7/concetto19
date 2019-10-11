@@ -235,7 +235,8 @@ export const Events = [
     },
     admins: ["Devashish Bariko - 9398889882", "Nishee Sharma - 9340129897"],
     club: "E-Cell",
-    link: "",
+    link:
+      "https://docs.google.com/forms/d/1tdXBEoGhrYWOcpnkeZVfH_OdSZ_DfOk4fuh3ad9lT8k/viewform",
     pdf:
       "https://drive.google.com/file/d/1T8oZb9PC8VHpeiEW28HFLHYIPUs29QNa/view?usp=sharing"
   },
