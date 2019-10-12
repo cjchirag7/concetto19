@@ -20,7 +20,7 @@ export default (
       <Route path="/workshops" />
       <Route path="/guest-talks" />
       <Route path="/our-team" />
-      <Route path="/about-theme" />
+      <Route path="/about-us" />
     </Route>
   </Switch>
 );
