@@ -614,7 +614,7 @@ export const Events = [
       "Aditya Shrivastava - 8409975522"
     ],
     club: "",
-    link: "",
+    link: "https://docs.google.com/forms/d/1Sje3KJhf_BqekREpJFFsupD1p6sZnuL3CPQr8cWFMoA",
     pdf:
       "https://drive.google.com/file/d/1-0eabA2kpdnBN2Gzk97n7tXDNyd241Ec/view?usp=sharing"
   },
