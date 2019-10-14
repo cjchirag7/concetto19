@@ -160,8 +160,9 @@ class Home extends Component {
           />
           <meta
             name="keywords"
-            content="iit ism dhanbad techfest, iit dhanbad techfest,Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto IIT,Concetto IIT (ISM) DHANBAD,Concetto IIT ISM,Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,IIT ISM, IIT (ISM) DHANBAD, events, exhibition, Workshops,Techno-management fest"
+            content="Concetto,Concetto 19,Concetto 2019,Concetto 2k19,Concetto iit,Concetto iit (ism) dhanbad,Concetto iit ism,Concetto techfest,Concetto tecnical fest, Concetto 2019-2020, Concetto tech fest 19,Concetto tech fest 2019,iit ism, iit (ism) DHANBAD, events, exhibition, Workshops,Techno-management fest, iit ism dhanbad techfest, iit dhanbad techfest,"
           />
+          <meta property="og:url" content="https://www.concetto19.tech/" />
         </Helmet>
         <section id="scroll_down" className="demo">
           <a

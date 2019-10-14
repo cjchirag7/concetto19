@@ -9,11 +9,6 @@
             "UnauthRoleName": "concetto19-prod-20191001160022-unauthRole",
             "StackName": "concetto19-prod-20191001160022",
             "StackId": "arn:aws:cloudformation:ap-south-1:517206538072:stack/concetto19-prod-20191001160022/795d8610-e436-11e9-abb0-06c3f8ffc026"
-        },
-        "categories": {
-            "auth": {
-                "concetto196babcaae": {}
-            }
         }
     }
 }

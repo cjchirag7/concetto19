@@ -1,9 +1,11 @@
 {
-	"auth": {
-		"concetto196babcaae": {
-			"service": "Cognito",
+	"auth": {},
+	"video": {
+		"guestTalkStream": {
+			"service": "video",
+			"serviceType": "livestream",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"sha": "a44b7a34212e2331d84c9336daf44712ec3a80de"
 		}
 	}
 }
