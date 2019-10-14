@@ -22,6 +22,17 @@ export const GuestTalks = [
     link: "https://www.linkedin.com/in/dharvendra-yadav-b5252192/"
   },
   {
+    guest: "ARUN DAYAL UDAI",
+    designation: "Ph.D. IIT Delhi",
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/GuestTalks/udai_big.jpg",
+    about:
+      "Mr. Arun Dayal Udai completed his Ph.D. in December 2016 from IIT Delhi, India in the subject area of Force Control of Industrial Robots. He did his M.Tech (Mechanical Design) from BIT Mesra, Ranchi in the year 2006. During the tenure of his Masters he co-authored a text book on Computer Graphics, which was published by Tata McGraw Hill, New Delhi in 2008. He completed his B. Tech in Marine Engineering from MERI, Kolkata, India in the year 1999 and worked with Anglo Eastern Ship Management, Hong Kong for four years. He sailed across globe on-board ship to different countries and acquired expertise in various areas of mechanical engineering. His research interests include Robotics, Mechatronics and CAD.; He has mastered the finest skills in the field of humanoid robotics and is one of the sharpest brains of the nation in this arena. Concetto feels fortunate to have him with us and share his views and motivate the young minds aspiring to create the future.",
+    time: "19th October",
+    place: "",
+    link: "https://www.youtube.com/user/arunudai"
+  },
+  {
     guest: "SANDEEP JAIN",
     designation: "CEO of GeeksForGeeks",
     img:

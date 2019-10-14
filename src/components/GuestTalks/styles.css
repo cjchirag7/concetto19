@@ -2,6 +2,7 @@
 .wrapper {
   background: #000000;
   display: flex;
+  opacity: 0.8;
   flex-direction: column;
   padding: 1.5em;
   border-radius: 10px;

@@ -5,6 +5,11 @@ export default (
   <Switch>
     <Route>
       <Route path="/" />
+      <Route path="/workshops" />
+      <Route path="/exhibitions" />
+      <Route path="/guest-talks" />
+      <Route path="/our-team" />
+      <Route path="/about-us" />
       <Route path="/club-events" />
       <Route path="/department-events" />
       <Route path="/club-events/:eventName" />
@@ -17,10 +22,6 @@ export default (
       <Route path="/department-events/:eventName/rules" />
       <Route path="/department-events/:eventName/details" />
       <Route path="/department-events/:eventName/register" />
-      <Route path="/workshops" />
-      <Route path="/guest-talks" />
-      <Route path="/our-team" />
-      <Route path="/about-us" />
     </Route>
   </Switch>
 );

@@ -15,6 +15,7 @@ import { Events } from "../shared/Events";
 import Workshops from "./Workshops";
 import AboutUs from "./AboutUs";
 import GuestTalk from "./GuestTalks";
+import Exhibition from "./Exhibition";
 
 // const mapStateToProps = state => {
 //   return {
@@ -231,6 +232,7 @@ class Main extends Component {
           <Route exact path="/our-team" component={() => <OurTeam />} />
           <Route exact path="/coming-soon" component={() => <ComingSoon />} />
           <Route exact path="/workshops" component={() => <Workshops />} />
+          <Route exact path="/exhibitions" component={() => <Exhibition />} />
           <Route exact path="/about-us" component={() => <AboutUs />} />
           <Route exact path="/guest-talks" component={() => <GuestTalk />} />
           {/* <Route
