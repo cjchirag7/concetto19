@@ -92,7 +92,7 @@ export const CoreTeam = [
     phone: "9850622697"
   },
   {
-    name: "Kshitij Goyal",
+    name: "Kshitiz Goyal",
     post: "Designing Team",
     pic:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/core-team/Kshitij+Goyal.jpg",

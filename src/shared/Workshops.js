@@ -10,7 +10,7 @@ export const Workshop_list = [
       "https://docs.google.com/forms/d/e/1FAIpQLSePuP1VVHvn4FDNqFPHGeuT0xeQDg17gR8DMGk4vUKPpim58g/viewform"
   },
   {
-    name: "Bizathon",
+    name: "Bizathon - workshop",
     link:
       "https://drive.google.com/file/d/1T8oZb9PC8VHpeiEW28HFLHYIPUs29QNa/view?usp=sharing",
     img:

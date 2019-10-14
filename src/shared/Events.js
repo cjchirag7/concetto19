@@ -175,7 +175,8 @@ export const Events = [
     },
     admins: ["Shashwat Raj - 7903592830", "Shubham Raj - 7277774644"],
     club: "CIIE",
-    link: "",
+    link:
+      "https://docs.google.com/forms/d/1NehcLdE6fzNl_aezGDWpGLiig33nPkpZtXR9AzVg-gE/edit?usp=sharing",
     pdf: "https://drive.google.com/open?id=1vH6znjty9BV4fZRnG5SBL9z-TUxIKpko"
   },
   {
@@ -272,11 +273,13 @@ export const Events = [
     is_team: 1,
     max_participants: 4,
     dept: "",
-    description: "Interstellar space exploration mission,",
+    description:
+      "Design a water rocket that is completely powered by the thrust delivered by water expelled at high pressure along with its Launchpad. The rocket will contain an egg as the payload which needs to land safely on the ground. Additional points will be given for payload separation. The landing must be done by the help of a parachute. Payload separation and parachute ejection needs to be done during flight.",
     is_club: 1,
     about:
-      "Here's the mission for you. Your team is the part of interstellar space exploration mission, during the exploration you find a exoplanet similar to earth. To survey the planet you decided to send a rover but the equipments of the rover are very sensitive which might get damage with sudden impact just like an egg.. so you have to perform the soft landing very precisely",
-    rules: "",
+      "Here’s the mission for you, your team is the part of interstellar space exploration mission, and during the exploration your team finds an exoplanet similar to earth!! To survey the planet your team decides to send a rover with very sensitive electronic equipment’s which might get damage with sudden impact just like a raw egg. So you have to build a rocket that will contain the payload and perform the soft landing very precisely.",
+    rules:
+      "Basic raw materials required will be provided.;Use of chemicals and explosives are strictly restricted.;Drones and other electronic equipment’s are not allowed.;Rocket must be made by using the bottles provided in the kit. Use of any other external bottle is restricted.;Egg will be provided at the time of launch. Participants are not allowed to bring their own.",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/soft_alite.jpg",
     prizes: "",
@@ -295,7 +298,8 @@ export const Events = [
     ],
     club: "ARKA",
     link: "https://forms.gle/PyUsPhi9JVJw2DiC6",
-    pdf: "https://drive.google.com/open?id=1ZFRnAx-euZJZ7w-wJ_lh116KM9tps5B8"
+    pdf:
+      "https://drive.google.com/file/d/1wO09pju9srVa8Cl9iSPmkiore5YMtX_T/view?usp=sharing"
   },
   {
     name: "Haul N Fall",
@@ -309,7 +313,7 @@ export const Events = [
     rules: "",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/events/petro.jpg",
     prizes: "",
-    fee: 200,
+    fee: 300,
     start: "",
     end: "",
     scores: {
@@ -614,7 +618,8 @@ export const Events = [
       "Aditya Shrivastava - 8409975522"
     ],
     club: "",
-    link: "https://docs.google.com/forms/d/1Sje3KJhf_BqekREpJFFsupD1p6sZnuL3CPQr8cWFMoA",
+    link:
+      "https://docs.google.com/forms/d/1Sje3KJhf_BqekREpJFFsupD1p6sZnuL3CPQr8cWFMoA",
     pdf:
       "https://drive.google.com/file/d/1-0eabA2kpdnBN2Gzk97n7tXDNyd241Ec/view?usp=sharing"
   },
