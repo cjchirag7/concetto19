@@ -1,11 +1,4 @@
 {
 	"auth": {},
-	"video": {
-		"guestTalkStream": {
-			"service": "video",
-			"serviceType": "livestream",
-			"providerPlugin": "awscloudformation",
-			"sha": "a44b7a34212e2331d84c9336daf44712ec3a80de"
-		}
-	}
+	"video": {}
 }
