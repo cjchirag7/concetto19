@@ -825,7 +825,7 @@ export const Events = [
     name: "Buffet Money 19",
     is_team: 0,
     max_participents: 1,
-    dept: "Applied mathematics",
+    dept: "Mathematics and Computing",
     description:
       "It’s time to unleash the ‘Jordan Belfort’ within you, as you place bets on real-world stocks without any jeopardy of losing money.",
     is_club: 0,
