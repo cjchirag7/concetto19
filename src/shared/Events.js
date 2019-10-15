@@ -949,7 +949,7 @@ export const Events = [
     ],
     club: "",
     link:
-      "https://docs.google.com/forms/d/e/1FAIpQLSd7aRhx_PL2_BqxjSN1da_6nxwq61jD_dMa29OJzVSKoZc82Q/viewform",
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpyrygWiFIve0FlMBEFH6J4XtKn2rBC3U8SSkQ7oXbJ-h8Ww/viewform",
     pdf:
       "https://drive.google.com/file/d/10jB4rrkn_KIFc3DFsXgDO9GXrUXv7pVZ/view?usp=sharing"
   },
