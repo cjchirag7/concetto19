@@ -1,6 +1,6 @@
 export const Exhibitions = [
   {
-    name: "Wingfotech Pvt. Ltd.",
+    name: "Wingfotech Bot Exhibition",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/GuestTalks/wingfotech.jpg",
     details:

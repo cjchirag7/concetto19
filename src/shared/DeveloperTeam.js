@@ -52,5 +52,14 @@ export const DeveloperTeam = [
     fb: "https://m.facebook.com/naman.zelawat.5",
     linkedin: "https://www.linkedin.com/mwlite/me",
     git: "https://github.com/NamanZelawat"
+  },
+  {
+    name: "Saurabh Raj",
+    post: "Designer",
+    pic:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/dev-team/saurabh.jpg",
+    fb: "https://m.facebook.com/saurabh.raj.73997",
+    linkedin: "https://www.linkedin.com/in/saurabh-raj-aab418184",
+    git: "https://github.com/100rabraj"
   }
 ];
