@@ -23,7 +23,7 @@ export const Workshop_list = [
   {
     name: "Cyber Security and Ethical Hacking",
     link:
-      "https://drive.google.com/file/d/1MLdCddM7q1Lupvjt5LNyb7qGZyV41oIZ/view?usp=sharing",
+      "https://drive.google.com/file/d/10sgGAf8j4Er9GAfTyM7jYekVxaXd8H0L/view",
     img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/cyberlabs.jpg",
     details:
@@ -33,7 +33,7 @@ export const Workshop_list = [
   {
     name: "AI and ML using Python",
     link:
-      "https://drive.google.com/file/d/1J8nV-jwSAwwg_gryinQrKSk0QFROYMIu/view?usp=sharing",
+      "https://drive.google.com/file/d/1-UAZhH9PlehVNM3F05c3ywYn_ZS57IqK/view",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/ml-workshop.jpg",
     details:
       "Artificial intelligence and machine learning has also been on the peek of human interest, so Concetto’19 brings to you a workshop on AI and ML using python in association with “Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650 . The workshop will have various topics covered in the sessions",
@@ -42,7 +42,7 @@ export const Workshop_list = [
   {
     name: "Internet of Things (IoT)",
     link:
-      "https://drive.google.com/file/d/1PShYak1A1kQwjh-mlYOBZW0qdjP39zU8/view?usp=sharing",
+      "https://drive.google.com/file/d/1GLdIHUjYirqKZUqM4wg3vSgSEmKqRS4X/view",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/workshop2.jpg",
     details:
       "Concetto’19 brings to you a workshop on ‘Internet of Things’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650 . Internet of Things (IoT) is an ecosystem of connected physical things that are accessible through the internet. The 'Thing' in IoT could be a person with a heart monitor or an automobile with built-in-sensors, i.e. objects that have been assigned an IP address and could collect and transfer data over a network without manual intervention. The embedded devices in the objects helps them to interact with internal states or the external environment, which in turn used for remote monitoring and control purpose and affects the decisions taken. ",
@@ -51,7 +51,7 @@ export const Workshop_list = [
   {
     name: "Humanoid Robotics",
     link:
-      "https://drive.google.com/file/d/11_c0CE8d0Y9vCNuXPRGhTY5iNF-Bgzu9/view?usp=sharing",
+      "https://drive.google.com/file/d/1-FMgRCEdxErn3uhh3vEuYWz0eTxBBmUv/view",
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/exhibition2.jpg",
     details:
       "Robots are the center of attention for everyone, how intelligent and useful they can be, has always been interesting. Concetto’19 brings to you a workshop on ‘HUMANOID ROBOTICS’ in association with“Wingfotech Pvt. Ltd.”, the leading training providing firm. The workshop will be of 8-hour duration having a minimal charge of Rs. 650. Projects like PWM Generation, Servo Interfacing, Angle Calculation, No, Namaste, Walking (Forward, Back, Left, Right & Back), Dancing Robot will be covered in the workshop ",
