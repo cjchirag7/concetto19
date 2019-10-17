@@ -151,7 +151,8 @@ export const Events = [
     admins: ["Mayank Kumar - 9097982652", "Pawan Dogra - 8988404140"],
     club: "Cyberlabs",
     link: "https://forms.gle/44upo8djh6gDDBsd7",
-    pdf: "https://drive.google.com/file/d/1oGRnkX8JtmBqlNMi5cZ7htnuVOFDlq2h/view?usp=sharing"
+    pdf:
+      "https://drive.google.com/file/d/1oGRnkX8JtmBqlNMi5cZ7htnuVOFDlq2h/view?usp=sharing"
   },
   {
     name: "PIYUSH DUTTA INNOVATION AND INVENTION PRIZE",
@@ -772,8 +773,8 @@ export const Events = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/chem+cruise.jpg",
     prizes: "",
     fee: 0,
-    timing: "13:00- 14:00;8:00- 09:00",
-    day: 12,
+    timing: "13:00- 15:00",
+    day: 1,
     scores: {
       first: 50,
       second: 30,

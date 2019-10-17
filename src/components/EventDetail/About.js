@@ -13,8 +13,8 @@ class About extends Component {
       day2 = 0;
     }
     console.log(event.day);
-    console.log(event.day / 10);
-    console.log(Math.floor(event.day / 10));
+    console.log(event.day % 10);
+    console.log(Math.floor(event.day % 10));
     console.log(day1);
     return (
       <div className="container" style={{ display: "block", width: "80vw" }}>
@@ -44,11 +44,12 @@ class About extends Component {
           "\n " +
           event.about} \n `}
         <br />
-        <br />
         {`${
-          event.is_club
+          event.is_club && event.club
             ? " CLUB  :  " + event.club
-            : "  DEPARTMENT  :  " + event.dept
+            : event.dept
+            ? "  DEPARTMENT  :  " + event.dept
+            : ""
         }`}
         <br />
         <br />
@@ -57,6 +58,8 @@ class About extends Component {
           ? " Day 1 : 10:00-18:00 and 21:00-12:00 Next Day and Day 2 : 11:00-15:00"
           : event.name === "CodeYaan 1.0"
           ? " Thursday : 22:00-12:30"
+          : event.name === "PUBG"
+          ? " PUBG-solo:- 17/10/2019 and PUBG-squad:- 18/10/2019"
           : `  ${
               day1 ? " Day " + day1 + " : " + timings[0] : " Coming Soon "
             } ${

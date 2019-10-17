@@ -12,10 +12,12 @@ import EventDetail from "./EventDetail";
 import OurTeam from "./OurTeam";
 import ComingSoon from "./ComingSoon";
 import { Events } from "../shared/Events";
+import InformalEvents from "./InformalEvents";
 import Workshops from "./Workshops";
 import AboutUs from "./AboutUs";
 import GuestTalk from "./GuestTalks";
 import Exhibition from "./Exhibition";
+import { Informals } from "../shared/InformalEvents";
 
 // const mapStateToProps = state => {
 //   return {
@@ -96,6 +98,17 @@ class Main extends Component {
       }
       return <EventDetail event={selectedEvent} active={"about"} />;
     };
+    const InformalWithNameAbout = ({ match }) => {
+      let selectedEvent = Informals.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"about"} />;
+    };
+
     const EventWithNameRules = ({ match }) => {
       let selectedEvent = events.filter(
         event => event.name.split(" ").join("-") === match.params.eventName
@@ -106,6 +119,18 @@ class Main extends Component {
       }
       return <EventDetail event={selectedEvent} active={"rules"} />;
     };
+
+    const InformalWithNameRules = ({ match }) => {
+      let selectedEvent = Informals.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"rules"} />;
+    };
+
     const EventWithNameDetails = ({ match }) => {
       let selectedEvent = events.filter(
         event => event.name.split(" ").join("-") === match.params.eventName
@@ -116,6 +141,18 @@ class Main extends Component {
       }
       return <EventDetail event={selectedEvent} active={"details"} />;
     };
+
+    const InformalWithNameDetails = ({ match }) => {
+      let selectedEvent = Informals.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"details"} />;
+    };
+
     const EventWithNameRegister = ({ match }) => {
       let selectedEvent = events.filter(
         event => event.name.split(" ").join("-") === match.params.eventName
@@ -126,6 +163,18 @@ class Main extends Component {
       }
       return <EventDetail event={selectedEvent} active={"register"} />;
     };
+
+    const InformalWithNameRegister = ({ match }) => {
+      let selectedEvent = Informals.filter(
+        event => event.name.split(" ").join("-") === match.params.eventName
+      )[0];
+      // let notFoundErr = null;
+      if (selectedEvent === undefined) {
+        return <ComingSoon />;
+      }
+      return <EventDetail event={selectedEvent} active={"register"} />;
+    };
+
     // const { preloader } = this.props;
     // const { delayed } = this.state;
     // if (preloader && !delayed) {
@@ -253,6 +302,11 @@ class Main extends Component {
             component={() => <EventPage events={events} active={1} />}
           />
           <Route
+            exact
+            path="/informal-events"
+            component={() => <InformalEvents Informals={Informals} />}
+          />
+          <Route
             path="/department-events/:eventName/about"
             component={EventWithNameAbout}
           />
@@ -302,6 +356,33 @@ class Main extends Component {
               <Redirect
                 to={{
                   pathname: `/club-events/${match.params.eventName}/about`
+                }}
+              />
+            )}
+          />
+          <Route
+            path="/informal-events/:eventName/about"
+            component={InformalWithNameAbout}
+          />
+          <Route
+            path="/informal-events/:eventName/rules"
+            component={InformalWithNameRules}
+          />
+          <Route
+            path="/informal-events/:eventName/details"
+            component={InformalWithNameDetails}
+          />
+          <Route
+            path="/informal-events/:eventName/register"
+            component={InformalWithNameRegister}
+          />
+          <Route
+            exact
+            path="/informal-events/:eventName"
+            component={({ match }) => (
+              <Redirect
+                to={{
+                  pathname: `/informal-events/${match.params.eventName}/about`
                 }}
               />
             )}

@@ -69,6 +69,16 @@ class Header extends Component {
                   ABOUT US
                 </NavLink>
               </li>
+
+              <li>
+                <NavLink
+                  className="nav-link"
+                  to="/exhibitions"
+                  onClick={this.toggleMenu}
+                >
+                  EXHIBITIONS
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   className="nav-link"
@@ -76,6 +86,15 @@ class Header extends Component {
                   onClick={this.toggleMenu}
                 >
                   WORKSHOPS
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link"
+                  to="/informal-events"
+                  onClick={this.toggleMenu}
+                >
+                  INFORMAL EVENTS
                 </NavLink>
               </li>
               <li>
@@ -94,15 +113,6 @@ class Header extends Component {
                   onClick={this.toggleMenu}
                 >
                   DEPARTMENTAL EVENTS
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  className="nav-link"
-                  to="/exhibitions"
-                  onClick={this.toggleMenu}
-                >
-                  EXHIBITIONS
                 </NavLink>
               </li>
               {/* <li>

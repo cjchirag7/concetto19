@@ -10,7 +10,7 @@ class Details extends Component {
           <meta
             name="description"
             content={`Organized by ${
-              event.is_club
+              event.is_club && event.club
                 ? event.club + " club "
                 : event.dept + " department "
             } of IIT (ISM) Dhanbad, during Concetto 2019. ${(!event.description
@@ -42,16 +42,29 @@ class Details extends Component {
         ) : (
           ""
         )}
+        {event.pdf ? (
+          <React.Fragment>
+            <br />
+            For detailed description, refer the <a href={event.pdf}>document</a>
+          </React.Fragment>
+        ) : (
+          ""
+        )}
         <br />
-        For detailed description, refer the <a href={event.pdf}>document</a>
-        <br />
-        For any queries, feel free to contact :
-        <br />
-        <ul>
-          {event.admins.map((admin, id) => (
-            <li key={id.toString()}>{admin}</li>
-          ))}
-        </ul>
+        {event.admins ? (
+          <React.Fragment>
+            {" "}
+            For any queries, feel free to contact :
+            <br />
+            <ul>
+              {event.admins.map((admin, id) => (
+                <li key={id.toString()}>{admin}</li>
+              ))}
+            </ul>
+          </React.Fragment>
+        ) : (
+          ""
+        )}
       </div>
     );
   }

@@ -175,12 +175,6 @@ html,body{
   letter-spacing: 0.27em;
 }
 
-@media (max-height: 600px) {
-.nav-link
-{
-  padding: 0;
-}
-}
 
 #menuToggle
 {
@@ -397,4 +391,8 @@ box-shadow: none;
 
 .title:hover{
   color: lightblue;
+}
+.nav-link
+{
+  padding: 0 !important;
 }

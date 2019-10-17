@@ -12,7 +12,7 @@ class Mobileview extends Component {
     const { event } = this.props;
     const timings = event.timing.split(";");
     let day1, day2;
-    if (event.day / 10) {
+    if (Math.floor(event.day / 10)) {
       day1 = Math.floor(event.day / 10);
       day2 = Math.floor(event.day % 10);
     } else {
@@ -44,9 +44,11 @@ class Mobileview extends Component {
               <br />
               <br />
               {`${
-                event.is_club
+                event.is_club && event.club
                   ? " CLUB  :  " + event.club
-                  : "  DEPARTMENT  :  " + event.dept
+                  : event.dept
+                  ? "  DEPARTMENT  :  " + event.dept
+                  : ""
               }`}
               <br />
               <br />
@@ -55,6 +57,8 @@ class Mobileview extends Component {
                 ? " Day 1 : 10:00-18:00 and 21:00-12:00 Next Day and Day 2 : 11:00-15:00"
                 : event.name === "CodeYaan 1.0"
                 ? " Thursday : 22:00-12:30"
+                : event.name === "PUBG"
+                ? " PUBG-solo:- 17/10/2019 and PUBG-squad:- 18/10/2019"
                 : `  ${
                     day1 ? " Day " + day1 + " : " + timings[0] : " Coming Soon "
                   } ${
@@ -114,18 +118,31 @@ class Mobileview extends Component {
                 ""
               )}
               <br />
-              <br />
-              For detailed description, refer the{" "}
-              <a href={event.pdf}>document</a>
-              <br />
-              <br />
-              For any queries, feel free to contact :
-              <br />
-              <ul>
-                {event.admins.map((admin, id) => (
-                  <li key={id.toString()}>{admin}</li>
-                ))}
-              </ul>
+              {event.pdf ? (
+                <React.Fragment>
+                  <br />
+                  For detailed description, refer the{" "}
+                  <a href={event.pdf}>document</a>
+                </React.Fragment>
+              ) : (
+                ""
+              )}{" "}
+              {event.admins ? (
+                <React.Fragment>
+                  {" "}
+                  <br />
+                  <br />
+                  For any queries, feel free to contact :
+                  <br />
+                  <ul>
+                    {event.admins.map((admin, id) => (
+                      <li key={id.toString()}>{admin}</li>
+                    ))}
+                  </ul>
+                </React.Fragment>
+              ) : (
+                ""
+              )}
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -166,11 +183,15 @@ class Mobileview extends Component {
             </div>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails style={{ paddingLeft: "35%" }}>
-            <a href={event.link} target="_blank" rel="noopener noreferrer">
-              <button type="button" className="btn btn-primary btn-lg">
-                REGISTER
-              </button>
-            </a>
+            {event.link ? (
+              <a href={event.link} target="_blank" rel="noopener noreferrer">
+                <button type="button" className="btn btn-primary btn-lg">
+                  REGISTER
+                </button>
+              </a>
+            ) : (
+              "No registration required for this event."
+            )}
           </ExpansionPanelDetails>
         </ExpansionPanel>
       </div>
