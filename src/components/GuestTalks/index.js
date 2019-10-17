@@ -86,14 +86,12 @@ class GuestTalk extends Component {
                       </span>
                     </span>
 
-                    {/* <span class="row">
-                    <i class="fa fa-map-marker fa-lg"></i>
-                    <span class="row-item">
-                      <strong>Proto BuildBar</strong>
-                      <br />
-                      534 E 1st St
+                    <span class="row">
+                      <i class="fa fa-map-marker fa-lg"></i>
+                      <span class="row-item">
+                        <strong>{talk.place}</strong>
+                      </span>
                     </span>
-                  </span> */}
                   </p>
                 </div>
               </div>

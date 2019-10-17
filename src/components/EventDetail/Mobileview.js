@@ -10,6 +10,16 @@ import rule_book from "./RuleBook";
 class Mobileview extends Component {
   render() {
     const { event } = this.props;
+    const timings = event.timing.split(";");
+    let day1, day2;
+    if (day1 / 10) {
+      day1 = Math.floor(event.day / 10);
+      day2 = Math.floor(event.day % 10);
+    } else {
+      day1 = Math.floor(event.day % 10);
+      day2 = 0;
+    }
+
     return (
       <div>
         <ExpansionPanel square expandIcon={<ExpandMoreIcon />}>
@@ -38,6 +48,37 @@ class Mobileview extends Component {
                   ? " CLUB  :  " + event.club
                   : "  DEPARTMENT  :  " + event.dept
               }`}
+              <br />
+              <br />
+              <i class="fa fa-calendar"></i>&nbsp;{" "}
+              {event.name === "Bizathon"
+                ? " Day 1 : 10:00-18:00 and 21:00-12:00 Next Day and Day 2 : 11:00-15:00"
+                : event.name === "CodeYaan 1.0"
+                ? " Thursday : 22:00-12:30"
+                : `  ${
+                    day1 ? " Day " + day1 + " : " + timings[0] : " Coming Soon "
+                  } ${
+                    day2
+                      ? `${day1 === day2 ? " and " : " and Day " + day2}` +
+                        " : " +
+                        timings[1]
+                      : " "
+                  } \n `}
+              {event.name === "Capture the flag" ? (
+                <p>
+                  <br />
+                  Enter into the contest &nbsp;
+                  <a
+                    href="https://www.hackerrank.com/clctf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                </p>
+              ) : (
+                ""
+              )}
             </Typography>
           </ExpansionPanelDetails>
         </ExpansionPanel>
@@ -56,7 +97,12 @@ class Mobileview extends Component {
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
             <Typography>
-              {event.description}
+              {event.description.split(";").map(sen => (
+                <React.Fragment>
+                  {sen}
+                  <br />
+                </React.Fragment>
+              ))}
               {event.fee ? (
                 <React.Fragment>
                   <br />
