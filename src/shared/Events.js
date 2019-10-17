@@ -151,7 +151,7 @@ export const Events = [
     admins: ["Mayank Kumar - 9097982652", "Pawan Dogra - 8988404140"],
     club: "Cyberlabs",
     link: "https://forms.gle/44upo8djh6gDDBsd7",
-    pdf: "https://drive.google.com/open?id=1vXo-SZxxhBY_SreBjx8c2TfNndlOHs4P"
+    pdf: "https://drive.google.com/file/d/1oGRnkX8JtmBqlNMi5cZ7htnuVOFDlq2h/view?usp=sharing"
   },
   {
     name: "PIYUSH DUTTA INNOVATION AND INVENTION PRIZE",
