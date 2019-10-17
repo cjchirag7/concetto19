@@ -12,7 +12,7 @@ class Mobileview extends Component {
     const { event } = this.props;
     const timings = event.timing.split(";");
     let day1, day2;
-    if (day1 / 10) {
+    if (event.day / 10) {
       day1 = Math.floor(event.day / 10);
       day2 = Math.floor(event.day % 10);
     } else {
