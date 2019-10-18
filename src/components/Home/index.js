@@ -10,6 +10,8 @@ import ParallaxM from "../parallaxM";
 import { HomeContent } from "../../shared/Content";
 import "./styles.css";
 import { Helmet } from "react-helmet";
+import { SponsorsList } from "../../shared/Sponsors";
+import Sponsors from "../Sponsors";
 
 let max_offset, initial_offset;
 
@@ -216,6 +218,8 @@ class Home extends Component {
               );
           })}
         </div>
+        <Sponsors sponsors={SponsorsList} />
+        <br />
         <Footer />
       </div>
     );
