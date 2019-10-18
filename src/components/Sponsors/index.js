@@ -18,8 +18,8 @@ class Sponsors extends Component {
       <div>
         <h1
           style={{
-            textAlign: "center"
-            // marginTop: "20px"
+            textAlign: "center",
+            marginTop: "-20px"
           }}
           className="title"
         >
@@ -59,6 +59,7 @@ class Sponsors extends Component {
             </React.Fragment>
           ))}
         </div>
+        <br />
         <h1
           style={{
             textAlign: "center",
