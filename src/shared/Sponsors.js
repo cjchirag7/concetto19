@@ -8,17 +8,17 @@ export const SponsorsList = [
   },
   {
     img:
-      "https://concetto-front.s3.ap-south-1.amazonaws.com/Sponsors/NTFC-bronze+sponsor.webp",
-    is_title: false,
-    link: "https://www.ntpc.co.in/",
-    cat: "Major Sponsors"
-  },
-  {
-    img:
       "https://concetto-front.s3.ap-south-1.amazonaws.com/Sponsors/LTConstructionWET.png",
     is_title: false,
     link:
       "https://www.larsentoubro.com/corporate/products-and-services/construction/water-effluent-treatment/",
+    cat: "Major Sponsors"
+  },
+  {
+    img:
+      "https://concetto-front.s3.ap-south-1.amazonaws.com/Sponsors/NTFC-bronze+sponsor.webp",
+    is_title: false,
+    link: "https://www.ntpc.co.in/",
     cat: "Major Sponsors"
   },
   {
