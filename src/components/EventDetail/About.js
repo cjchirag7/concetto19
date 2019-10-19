@@ -5,17 +5,17 @@ class About extends Component {
     const { event } = this.props;
     const timings = event.timing.split(";");
     let day1, day2;
-    if (event.day / 10) {
+    if (Math.floor(event.day / 10)) {
       day1 = Math.floor(event.day / 10);
       day2 = Math.floor(event.day % 10);
     } else {
       day1 = Math.floor(event.day % 10);
       day2 = 0;
     }
-    console.log(event.day);
-    console.log(event.day % 10);
-    console.log(Math.floor(event.day % 10));
-    console.log(day1);
+    // console.log(event.day);
+    // console.log(event.day / 10);
+    // console.log(event.day % 10);
+    // console.log(Math.floor(event.day / 10));
     return (
       <div className="container" style={{ display: "block", width: "80vw" }}>
         <Helmet>
