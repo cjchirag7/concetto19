@@ -18,6 +18,8 @@ import AboutUs from "./AboutUs";
 import GuestTalk from "./GuestTalks";
 import Exhibition from "./Exhibition";
 import { Informals } from "../shared/InformalEvents";
+import Sponsers from "./Sponsors";
+import { SponsorsList } from "../shared/Sponsors";
 
 // const mapStateToProps = state => {
 //   return {
@@ -386,6 +388,10 @@ class Main extends Component {
                 }}
               />
             )}
+          />
+          <Route
+            path="/sponsors"
+            component={() => <Sponsers sponsors={SponsorsList} />}
           />
           <Redirect to="/home" />
         </Switch>

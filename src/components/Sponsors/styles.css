@@ -1,0 +1,17 @@
+.team-page{
+  background: url("https://concetto-front.s3.ap-south-1.amazonaws.com/team_bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.title-sponser{
+  font-size: 100px;
+  color: black;
+}
+@media (max-width: 800px)
+{
+  .title-sponser{
+  font-size: 50px;
+  }
+}

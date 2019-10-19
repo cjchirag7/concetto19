@@ -67,7 +67,7 @@ class Mobileview extends Component {
                         " : " +
                         timings[1]
                       : " "
-                  } \n `}
+                  } ${event.finals ? ` | Finals : ${event.finals}` : ""} `}
               {event.name === "Capture the flag" ? (
                 <p>
                   <br />

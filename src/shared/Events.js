@@ -14,7 +14,8 @@ export const Events = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/robo+war.jpg",
     prizes: "",
     fee: 0,
-    timing: "19:00-22:00;17:00-20:00",
+    timing: "19:00-22:00;20:00-23:59",
+    finals: "Day 3 17:00-20:00",
     day: 12,
     scores: {
       first: 50,
@@ -47,6 +48,7 @@ export const Events = [
     prizes: "",
     fee: 0,
     timing: "14:00-18:00;9:30-13:00",
+    finals: "Day 2 11:00-14:00",
     day: 12,
     scores: {
       first: 50,
@@ -80,7 +82,8 @@ export const Events = [
       "https://concetto-front.s3.ap-south-1.amazonaws.com/events/deadth+race.jpg",
     prizes: "",
     fee: 0,
-    timing: "09:00-11:00;15:00-18:00",
+    timing: "09:00-11:00;13:00-17:00",
+    finals: "Day 3 14:00-17:00",
     day: 33,
     scores: {
       first: 50,
@@ -508,7 +511,7 @@ export const Events = [
     img: "https://concetto-front.s3.ap-south-1.amazonaws.com/department3.jpg",
     prizes: "",
     fee: 0,
-    timing: "13:00-16:00",
+    timing: "14:00-17:00",
     day: 2,
     scores: {
       first: 50,

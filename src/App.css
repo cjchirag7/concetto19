@@ -293,6 +293,22 @@ html,body{
   font-weight: bold;
 }
 
+@media (max-height: 580px)
+{
+  #menu li
+{
+  padding: 3.5px 0;
+}
+}
+
+@media (max-height: 400px)
+{
+  #menu li
+{
+  padding: 2px 0;
+}
+}
+
 /*
  * And let's fade it in from the left
  */
@@ -395,4 +411,22 @@ box-shadow: none;
 .nav-link
 {
   padding: 0 !important;
+}
+
+.header-link{
+font-size: 1.05rem;
+}
+
+@media (min-height: 400px)
+{
+.header-link{
+font-size: 1.3rem;
+}
+}
+
+@media (min-height: 520px)
+{
+.header-link{
+font-size: 1.5rem;
+}
 }

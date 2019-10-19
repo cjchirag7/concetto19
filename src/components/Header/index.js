@@ -53,7 +53,7 @@ class Header extends Component {
               <br />
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link"
                   to="/home"
                   onClick={this.toggleMenu}
                 >
@@ -62,7 +62,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link"
                   to="/about-us"
                   onClick={this.toggleMenu}
                 >
@@ -71,7 +71,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/exhibitions"
                   onClick={this.toggleMenu}
                 >
@@ -80,7 +80,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/workshops"
                   onClick={this.toggleMenu}
                 >
@@ -89,7 +89,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/informal-events"
                   onClick={this.toggleMenu}
                 >
@@ -98,7 +98,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/club-events"
                   onClick={this.toggleMenu}
                 >
@@ -107,7 +107,7 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/department-events"
                   onClick={this.toggleMenu}
                 >
@@ -116,7 +116,7 @@ class Header extends Component {
               </li>
               {/* <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/login"
                   onClick={this.toggleMenu}
                 >
@@ -125,7 +125,7 @@ class Header extends Component {
               </li> */}
               {/* <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/coming-soon"
                   onClick={this.toggleMenu}
                 >
@@ -134,7 +134,7 @@ class Header extends Component {
               </li> */}
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/our-team"
                   onClick={this.toggleMenu}
                 >
@@ -143,11 +143,20 @@ class Header extends Component {
               </li>
               <li>
                 <NavLink
-                  className="nav-link"
+                  className="nav-link header-link "
                   to="/guest-talks"
                   onClick={this.toggleMenu}
                 >
                   GUEST TALKS
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  className="nav-link header-link "
+                  to="/sponsors"
+                  onClick={this.toggleMenu}
+                >
+                  SPONSORS
                 </NavLink>
               </li>
             </ul>
